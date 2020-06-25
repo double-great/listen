@@ -33,21 +33,51 @@
 
 <body>
   <h1>Listen</h1>
-  <p>Testing punctuation and markup for audible variances in screen readers.</p>
-  <p><a href="https://github.com/double-great/listen">https://github.com/double-great/listen</a></p>
+  <p>Testing punctuation and markup for audible variances in screen readers. <a href="https://github.com/double-great/listen">https://github.com/double-great/listen</a></p>
 
-  <h2>Punctuation</h2>
-  <p>You can do anything, but not everything!</p>
-  <p>You can do anything, but not everything?</p>
-  <p>You can do anything, but not everything.</p>
+  <h2>Punctuation in alt text</h2>
+  <p>The examples below contain alt text that ends in:</p>
+  <ol>
+    <li>no punctuation</li>
+    <li>a period</li>
+    <li>an exclamation point</li>
+    <li>a question mark</li>
+  </ol>
+  <p><img src="octagon.png" width="100" height="100" alt="A shape with eight sides"></p>
+  <p><img src="octagon.png" width="100" height="100" alt="A shape with eight sides."></p>
+  <p><img src="octagon.png" width="100" height="100" alt="A shape with eight sides!"></p>
+  <p><img src="octagon.png" width="100" height="100" alt="A shape with eight sides?"></p>
+
+  <h3>Findings</h3>
+  <p>In VoiceOver on macOS (10.15), all alt text ending with tested punctuation added a brief pause at the end, when read aloud. Alt text ending in a question mark caused an audible inflection change, when read aloud.</p>
 
   <h2>Italics and Emphasis</h2>
-  <p>You can do <i>anything</i>, but not everything.</p>
-  <p>You can do <em>anything</em>, but not everything.</p>
+  <p>The examples below mark up &ldquo;quick brown fox&rdquo; using:</p>
+  <ol>
+    <li>no tags</li>
+    <li><code>&lt;i&gt;</code> tags</li>
+    <li><code>&lt;em&gt;</code> tags</li>
+  </ol>
+  <p>The quick brown fox jumps over the lazy dog.</p>
+  <p>The <i>quick brown fox</i> jumps over the lazy dog.</p>
+  <p>The <em>quick brown fox</em> jumps over the lazy dog.</p>
+
+  <h3>Findings</h3>
+  <p>In VoiceOver on macOS (10.15), no audible difference can be heard when comparing the examples.</p>
 
   <h2>Bold and Strong</h2>
-  <p>You can do <b>anything</b>, but not everything.</p>
-  <p>You can do <strong>anything</strong>, but not everything.</p>
+  <p>The examples below mark up &ldquo;quick brown fox&rdquo; using:</p>
+  <ol>
+    <li>no tags</li>
+    <li><code>&lt;b&gt;</code> tags</li>
+    <li><code>&lt;strong&gt;</code> tags</li>
+  </ol>
+  <p>The quick brown fox jumps over the lazy dog.</p>
+  <p>The <b>quick brown fox</b> jumps over the lazy dog.</p>
+  <p>The <strong>quick brown fox</strong> jumps over the lazy dog.</p>
+
+  <h3>Findings</h3>
+  <p>In VoiceOver on macOS (10.15), no audible difference can be heard when comparing the examples.</p>
 
 </body>
 
