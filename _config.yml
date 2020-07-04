@@ -1,6 +1,8 @@
 title: Listen
-baseurl: /listen
 description: "Testing punctuation and markup for audible variances in screen readers."
+url: "https://doublegreat.dev"
+baseurl: /listen
+
 theme: minima
 
 author:
