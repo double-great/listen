@@ -15,7 +15,7 @@ permalink: /:title/
 defaults:
   - scope:
       path: ""
-      type: "cases"
+      type: "post"
     values:
       layout: "post"
       permalink: /:title/
