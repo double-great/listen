@@ -33,10 +33,6 @@ cases:
 <th>Name</th>
 <th>Test case</th>
 <th>Audio</th>
-<!--<th>MacOS</th>
-<th>JAWS</th>
-<th>NVDA</th>
-<th>iOS</th>-->
 </tr>
 </thead>
 <tbody>
