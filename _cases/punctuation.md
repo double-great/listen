@@ -39,7 +39,9 @@ cases:
 {%-for case in page.cases-%}
 <tr>
   <td>{{case.title}}</td>
-  <td>{{case.example | markdownify}}</td>
+  <td class="punctuation-image">{{case.example | markdownify}}
+    <pre><code>{{case.example}}</code></pre>
+  </td>
   <td>
   {% if case.macos %} {% include audio.html case=case.title title="MacOS" file=case.macos %}{% endif %}
   {% if case.jaws %} {% include audio.html case=case.title title="JAWS" file=case.jaws %}{% endif %}
