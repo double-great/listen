@@ -7,18 +7,21 @@ cases:
     jaws: endperiod-01-no-punctuation-windows-jaws-2020.mp3
     nvda: endperiod-01-no-punctuation-windows-nvda-2019-2-1.mp3
     ios: endperiod-01-no-punctuation-ios-voiceover-13.mp3
+
   - title: Ends in a period
     example: "A shape with eight sides."
     macos: endperiod-02-period-macos-voiceover-10-15.mp3
     jaws: endperiod-02-period-windows-jaws-2020.mp3
     nvda: endperiod-02-period-windows-nvda-2019-2-1.mp3
     ios: endperiod-02-period-ios-voiceover-13.mp3
+
   - title: Ends in an exclamation point
     example: "A shape with eight sides!"
     macos: endperiod-03-exclamation-macos-voiceover-10-15.mp3
     jaws: endperiod-03-exclamation-windows-jaws-2020.mp3
     nvda: endperiod-03-exclamation-windows-nvda-2019-2-1.mp3
     ios: endperiod-03-exclamation-ios-voiceover-13.mp3
+
   - title: Ends in a question mark
     example: "A shape with eight sides?"
     macos: endperiod-04-question-macos-voiceover-10-15.mp3
