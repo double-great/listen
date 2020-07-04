@@ -48,3 +48,9 @@ audio {
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap; /* added line */
 }
+
+@media (min-width: 900px) {
+  .expand {
+    margin: 0 -35px;
+  }
+}

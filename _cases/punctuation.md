@@ -27,6 +27,7 @@ cases:
     ios: endperiod-04-question-ios-voiceover-13.mp3
 ---
 
+<div class="expand">
 <table>
 <thead>
 <tr>
@@ -52,6 +53,7 @@ cases:
 {%-endfor-%}
 </tbody>
 </table>
+</div>
 
 ## Findings
 
