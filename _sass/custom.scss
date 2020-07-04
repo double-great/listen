@@ -19,16 +19,22 @@ a {
   margin-bottom: 0;
 }
 
+table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
 table td {
   vertical-align: top;
 }
 
-pre {
-  white-space: pre-wrap;
-  overflow-x: unset;
-  word-break: break-all;
+audio,
+figure {
+  margin: 0;
 }
 
-.punctuation-image {
-  max-width: 250px;
+audio {
+  width: 100px;
+  height: 30px;
 }
