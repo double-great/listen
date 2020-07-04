@@ -21,3 +21,11 @@ defaults:
 collections:
   cases:
     output: true
+
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - Gemfile
+  - Gemfile.lock
