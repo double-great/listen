@@ -1,0 +1,29 @@
+{
+  "name": "listen",
+  "version": "1.0.0",
+  "description": "Testing punctuation and markup for audible variances in screen readers.",
+  "main": "index.js",
+  "scripts": {
+    "pretty-quick": "pretty-quick"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/double-great/listen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/double-great/listen/issues"
+  },
+  "homepage": "https://github.com/double-great/listen#readme",
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.site-title {
+  letter-spacing: 0 !important;
+}
+
+.post-meta {
+  color: #757575; // a11y color contrast
+}
+
+a {
+  color: #2371d8; // a11y color contrast
+}
+
+.page-content {
+  flex: unset;
+}
+
+.post-list,
+.post-list > li {
+  margin-bottom: 0;
+}

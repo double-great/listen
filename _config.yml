@@ -1,0 +1,23 @@
+title: Listen
+baseurl: /listen
+description: "Testing punctuation and markup for audible variances in screen readers."
+theme: minima
+
+author:
+  name: "@double-great"
+
+github: double-great/listen
+
+permalink: /:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "cases"
+    values:
+      layout: "post"
+      permalink: /:title/
+
+collections:
+  cases:
+    output: true
