@@ -1,0 +1,36 @@
+<footer class="site-footer h-card">
+  <div class="wrapper">
+    <div>
+      <p>{{ site.description | escape }}</p>
+    </div>
+
+    <div class="social-links">
+      <ul class="social-media-list">
+        <!--<li>
+          <a href="{{ 'feed.xml' | relative_url }}">
+            <svg class="svg-icon orange">
+              <use
+                xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"
+              ></use></svg
+            ><span>Subscribe</span>
+          </a>
+        </li>-->
+
+        {%- if site.github -%}
+        <li>
+          <a
+            rel="me"
+            href="https://github.com/{{ site.github }}"
+            title="{{ site.github | escape }}"
+            ><svg class="svg-icon grey">
+              <use
+                xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"
+              ></use></svg
+            ><span>GitHub</span></a
+          >
+        </li>
+        {%- endif -%}
+      </ul>
+    </div>
+  </div>
+</footer>
