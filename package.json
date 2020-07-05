@@ -4,6 +4,8 @@
   "description": "Testing punctuation and markup for audible variances in screen readers.",
   "main": "index.js",
   "scripts": {
+    "test-content": "extra-eyes _posts/ --dict=library.dic",
+    "test": "npm run test-content",
     "pretty-quick": "pretty-quick"
   },
   "repository": {
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/double-great/listen#readme",
   "devDependencies": {
+    "extra-eyes": "^1.3.0",
     "husky": "^4.2.5",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1"
