@@ -60,7 +60,7 @@ This test details audible effects of punctuation in alternative text when read b
 </table>
 </div>
 
-[View test case page.]({{site.baseurl}}/test/punctuation-in-alt-text)
+<a class="button" href="test">View test case page</a>
 
 ## Findings
 

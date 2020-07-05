@@ -10,6 +10,25 @@ a {
   color: #2371d8; // a11y color contrast
 }
 
+a.button {
+  display: inline-block;
+  padding: 5px 16px;
+
+  white-space: nowrap;
+  vertical-align: middle;
+
+  border: 1px solid;
+  border-radius: 6px;
+
+  box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04),
+    inset 0 1px 0 hsla(0, 0%, 100%, 0.25);
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .page-heading {
   text-transform: uppercase;
   font-size: 1em;
