@@ -73,7 +73,7 @@ In VoiceOver on macOS (10.15), all alt text ending with tested punctuation added
 
 We generated each audio file from the following code:
 
-<div class='test-case'>
+<div class='punctuation-test-case'>
 
 {{page.test}}
 
