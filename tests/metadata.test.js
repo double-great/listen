@@ -39,7 +39,7 @@ buildList("_posts").forEach((post) => {
           t.ok(c[field], `has ${field}`);
         });
         // files
-        ["macos", "jaws", "nvda", "ios"].map((field) => {
+        ["macos", "jaws", "nvda"].map((field) => {
           const path = `audio/${c[field]}`;
           // has field
           t.ok(c[field], `has ${field}`);
