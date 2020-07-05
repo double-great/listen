@@ -1,18 +1,5 @@
 ---
 title: Bold and italics
-headings:
-  - title: VoiceOver
-    version: macOS 10.15
-    id: macos
-  - title: JAWS 2020
-    version: Windows 8.1
-    id: jaws
-  - title: NVDA 2019.2.1
-    version: Windows 8.1
-    id: nvda
-#  - title: VoiceOver
-#    version: iOS 13
-#    id: ios
 cases:
   - title: Unstyled
     example: "The quick brown fox jumps over the lazy dog."

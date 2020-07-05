@@ -1,18 +1,5 @@
 ---
 title: Punctuation in alt text
-headings:
-  - title: VoiceOver
-    version: macOS 10.15
-    id: macos
-  - title: JAWS 2020
-    version: Windows 8.1
-    id: jaws
-  - title: NVDA 2019.2.1
-    version: Windows 8.1
-    id: nvda
-  - title: VoiceOver
-    version: iOS 13
-    id: ios
 cases:
   - title: No punctuation
     example: "A shape with eight sides"
