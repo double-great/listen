@@ -35,7 +35,7 @@ cases:
     ios: endperiod-04-question-ios-voiceover-13.mp3
 ---
 
-In this test, we observed the effects of punctuation in alternative text when read by different screen readers.
+This test details audible effects of punctuation in alternative text when read by different screen readers.
 
 <div class="expand">
 <table>
@@ -67,7 +67,9 @@ In this test, we observed the effects of punctuation in alternative text when re
 
 ## Findings
 
-In VoiceOver on macOS (10.15), all alt text ending with tested punctuation added a brief pause at the end, when read aloud. Alt text ending in a question mark caused an audible inflection change, when read aloud.
+In VoiceOver on macOS 10.15 and JAWS 2020, alt text ending with punctuation added a brief pause at the end, when read aloud. NVDA 2019.2.1 and VoiceOver on iOS 13 did not change pacing with or without punctuation.
+
+Alt text ending in a question mark caused an audible inflection change, when read aloud in VoiceOver on macOS 10.15, VoiceOver on iOS 13, and JAWS 2020. NVDA 2019.2.1 adds a very subtle inflection change when using an exclamation point.
 
 ## Test case
 
