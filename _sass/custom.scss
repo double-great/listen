@@ -66,14 +66,15 @@ table td {
   vertical-align: top;
 }
 
-audio,
-figure {
-  margin: 0;
+.plyr {
+  min-width: unset !important;
+}
+.plyr__volume {
+  min-width: 34px !important;
 }
 
-audio {
-  width: 100px;
-  height: 30px;
+figure {
+  margin: 0;
 }
 
 .visually-hidden {
