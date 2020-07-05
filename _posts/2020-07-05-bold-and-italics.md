@@ -1,5 +1,18 @@
 ---
 title: Bold and italics
+headings:
+  - title: VoiceOver
+    version: macOS 10.15
+    id: macos
+  - title: JAWS 2020
+    version: Windows 8.1
+    id: jaws
+  - title: NVDA 2019.2.1
+    version: Windows 8.1
+    id: nvda
+#  - title: VoiceOver
+#    version: iOS 13
+#    id: ios
 cases:
   - title: Unstyled
     example: "The quick brown fox jumps over the lazy dog."
@@ -34,33 +47,7 @@ cases:
 
 This test details the audible effects of bold and italic markup when read by different screen readers.
 
-<div class="expand">
-<table>
-  <thead>
-    <tr>
-      <th>Test case</th>
-      <th>VoiceOver<br>macOS 10.15</th>
-      <th>JAWS 2020<br>Windows 8.1</th>
-      <th>NVDA 2019.2.1<br>Windows 8.1</th>
-    </tr>
-  </thead>
-  <tbody>
-  {%-for case in page.cases-%}
-    <tr>
-      <td>
-        {{case.title}}
-        <pre><code>{{case.example}}</code></pre>
-      </td>
-      <td>{% include audio.html case=case.title title="macOS" file=case.macos %}</td>
-      <td>{% include audio.html case=case.title title="JAWS" file=case.jaws %}</td>
-      <td>{% include audio.html case=case.title title="NVDA" file=case.nvda %}</td>
-    </tr>
-  {%-endfor-%}
-  </tbody>
-</table>
-</div>
-
-<a class="button" href="test">View test case page</a>
+{% include table.html headings=page.headings cases=page.cases %}
 
 ## Findings
 

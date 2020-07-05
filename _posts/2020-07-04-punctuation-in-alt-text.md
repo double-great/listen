@@ -1,5 +1,18 @@
 ---
 title: Punctuation in alt text
+headings:
+  - title: VoiceOver
+    version: macOS 10.15
+    id: macos
+  - title: JAWS 2020
+    version: Windows 8.1
+    id: jaws
+  - title: NVDA 2019.2.1
+    version: Windows 8.1
+    id: nvda
+  - title: VoiceOver
+    version: iOS 13
+    id: ios
 cases:
   - title: No punctuation
     example: "A shape with eight sides"
@@ -32,35 +45,7 @@ cases:
 
 This test details audible effects of punctuation in alternative text when read by different screen readers.
 
-<div class="expand">
-<table>
-  <thead>
-    <tr>
-      <th>Test case</th>
-      <th>VoiceOver<br>macOS 10.15</th>
-      <th>JAWS 2020<br>Windows 8.1</th>
-      <th>NVDA 2019.2.1<br>Windows 8.1</th>
-      <th>VoiceOver<br>iOS 13</th>
-    </tr>
-  </thead>
-  <tbody>
-  {%-for case in page.cases-%}
-    <tr>
-      <td>
-        {{case.title}}
-        <pre><code>{{case.example}}</code></pre>
-      </td>
-      <td>{% include audio.html case=case.title title="macOS" file=case.macos %}</td>
-      <td>{% include audio.html case=case.title title="JAWS" file=case.jaws %}</td>
-      <td>{% include audio.html case=case.title title="NVDA" file=case.nvda %}</td>
-      <td>{% include audio.html case=case.title title="iOS" file=case.ios %}</td>
-    </tr>
-  {%-endfor-%}
-  </tbody>
-</table>
-</div>
-
-<a class="button" href="test">View test case page</a>
+{% include table.html headings=page.headings cases=page.cases %}
 
 ## Findings
 

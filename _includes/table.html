@@ -1,0 +1,30 @@
+<div class="expand">
+  <table>
+    <thead>
+      <tr>
+        <th>Test case</th>
+        {%-for heading in include.headings-%}
+        <th>{{heading.title}}<br />{{heading.version}}</th>
+        {%-endfor-%}
+      </tr>
+    </thead>
+    <tbody>
+      {%-for case in include.cases-%}
+      <tr>
+        <td>
+          {{case.title}}
+          <pre><code>{{case.example}}</code></pre>
+        </td>
+        {%-for heading in include.headings-%} {% assign file = case[heading.id]
+        %}
+        <td>
+          {% include audio.html case=case.title title=heading.title file=file %}
+        </td>
+        {%-endfor-%}
+      </tr>
+      {%-endfor-%}
+    </tbody>
+  </table>
+</div>
+
+<a class="button" href="test">View test case page</a>
