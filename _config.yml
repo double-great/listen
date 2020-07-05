@@ -12,6 +12,10 @@ github: double-great/listen
 
 permalink: /:title/
 
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
 defaults:
   - scope:
       path: ""
@@ -19,6 +23,11 @@ defaults:
     values:
       layout: "post"
       permalink: /:title/
+  - scope:
+      path: "test"
+    values:
+      layout: "test"
+      permalink: /:basename/test/
 
 collections:
   cases:
@@ -32,3 +41,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .github
+  - library.dic

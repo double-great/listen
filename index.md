@@ -1,4 +1,4 @@
 ---
 layout: home
-title: Case studies
+title: Test cases
 ---
