@@ -38,12 +38,16 @@ buildList("_posts").forEach((post) => {
         ["title", "example"].map((field) => {
           t.ok(c[field], `has ${field}`);
         });
-        // files
+        // has required field
         ["macos", "jaws", "nvda"].map((field) => {
-          const path = `audio/${c[field]}`;
-          // has field
           t.ok(c[field], `has ${field}`);
-          if (c[field]) t.ok(fs.existsSync(path), `file ${path} exists`);
+        });
+        // audio file exists
+        ["macos", "jaws", "nvda", "ios"].map((field) => {
+          if (c[field]) {
+            const path = `audio/${c[field]}`;
+            t.ok(fs.existsSync(path), `file ${path} exists`);
+          }
         });
       });
     }
