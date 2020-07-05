@@ -1,10 +1,5 @@
 ---
 title: Punctuation in alt text
-test: >-
-  <img src="/listen/assets/octagon.png" alt="A shape with eight sides">
-  <img src="/listen/assets/octagon.png" alt="A shape with eight sides.">
-  <img src="/listen/assets/octagon.png" alt="A shape with eight sides!">
-  <img src="/listen/assets/octagon.png" alt="A shape with eight sides?">
 cases:
   - title: No punctuation
     example: "A shape with eight sides"
@@ -73,14 +68,4 @@ Alt text ending in a question mark caused an audible inflection change, when rea
 
 ## Test case
 
-We generated each audio file from the following code:
-
-<div class='punctuation-test-case'>
-
-{{page.test}}
-
-</div>
-
-```
-{{page.test}}
-```
+We generated each audio file from the [following test page]({{site.baseurl}}/test/punctuation-in-alt-text).
