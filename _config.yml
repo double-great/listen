@@ -4,6 +4,7 @@ url: "https://doublegreat.dev"
 baseurl: /listen
 
 theme: minima
+show_excerpts: true
 
 author:
   name: "@double-great"
