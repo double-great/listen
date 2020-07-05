@@ -37,10 +37,10 @@ This test details audible effects of punctuation in alternative text when read b
   <thead>
     <tr>
       <th>Test case</th>
-      <th>macOS</th>
-      <th>JAWS</th>
-      <th>NVDA</th>
-      <th>iOS</th>
+      <th>macOS 10.15</th>
+      <th>JAWS 2020</th>
+      <th>NVDA 2019.2.1</th>
+      <th>iOS 13 VoiceOver</th>
     </tr>
   </thead>
   <tbody>
