@@ -19,6 +19,11 @@ defaults:
     values:
       layout: "post"
       permalink: /:title/
+  - scope:
+      path: "test"
+    values:
+      layout: "test"
+      permalink: /:basename/test/
 
 collections:
   cases:
