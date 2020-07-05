@@ -44,8 +44,14 @@ a.button {
   flex: unset;
 }
 
-.post-list,
 .post-list > li {
+  margin-bottom: 0;
+}
+.post-list {
+  margin-bottom: 30px;
+  h2 {
+    margin-bottom: 0;
+  }
 }
 
 table {
