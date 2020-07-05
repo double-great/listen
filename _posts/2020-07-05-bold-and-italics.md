@@ -34,7 +34,7 @@ cases:
 
 This test details the audible effects of bold and italic markup when read by different screen readers.
 
-{% include table.html headings=page.headings cases=page.cases %}
+{% include table.html cases=page.cases %}
 
 ## Findings
 

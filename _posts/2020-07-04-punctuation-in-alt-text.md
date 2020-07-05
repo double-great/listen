@@ -32,7 +32,7 @@ cases:
 
 This test details audible effects of punctuation in alternative text when read by different screen readers.
 
-{% include table.html headings=page.headings cases=page.cases %}
+{% include table.html cases=page.cases %}
 
 ## Findings
 
