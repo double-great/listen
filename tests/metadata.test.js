@@ -34,12 +34,9 @@ buildList("_posts").forEach((post) => {
     if (metadata.cases) {
       t.true(Array.isArray(metadata.cases), "cases is an array");
       metadata.cases.map((c) => {
-        // metadata
-        ["title", "example"].map((field) => {
-          t.ok(c[field], `has ${field}`);
-        });
         // has required field
-        ["macos", "jaws", "nvda"].map((field) => {
+        // note: ios is not required right now
+        ["title", "example", "macos", "jaws", "nvda"].map((field) => {
           t.ok(c[field], `has ${field}`);
         });
         // audio file exists
