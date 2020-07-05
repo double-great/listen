@@ -1,0 +1,10 @@
+.plyr {
+  min-width: unset !important;
+  max-width: 100px !important;
+}
+.plyr__volume {
+  min-width: 34px !important;
+}
+.plyr--audio .plyr__controls {
+  background: transparent !important;
+}
