@@ -1,5 +1,10 @@
 ---
 title: Punctuation in alt text
+test: >-
+  <img src="/listen/assets/octagon.png" alt="A shape with eight sides">
+  <img src="/listen/assets/octagon.png" alt="A shape with eight sides.">
+  <img src="/listen/assets/octagon.png" alt="A shape with eight sides!">
+  <img src="/listen/assets/octagon.png" alt="A shape with eight sides?">
 cases:
   - title: No punctuation
     example: "A shape with eight sides"
@@ -30,34 +35,50 @@ cases:
     ios: endperiod-04-question-ios-voiceover-13.mp3
 ---
 
+In this test, we observed the effects of punctuation in alternative text when read by different screen readers.
+
 <div class="expand">
 <table>
-<thead>
-<tr>
-<th>Test case</th>
-<th>MacOS</th>
-<th>JAWS</th>
-<th>NVDA</th>
-<th>iOS</th>
-</tr>
-</thead>
-<tbody>
-{%-for case in page.cases-%}
-<tr>
-  <td>
-    {{case.title}}
-    <pre><code>{{case.example}}</code></pre>
-  </td>
-  <td>{% include audio.html case=case.title title="MacOS" file=case.macos %}</td>
-  <td>{% include audio.html case=case.title title="JAWS" file=case.jaws %}</td>
-  <td>{% include audio.html case=case.title title="NVDA" file=case.nvda %}</td>
-  <td>{% include audio.html case=case.title title="iOS" file=case.ios %}</td>
-</tr>
-{%-endfor-%}
-</tbody>
+  <thead>
+    <tr>
+      <th>Test case</th>
+      <th>macOS</th>
+      <th>JAWS</th>
+      <th>NVDA</th>
+      <th>iOS</th>
+    </tr>
+  </thead>
+  <tbody>
+  {%-for case in page.cases-%}
+    <tr>
+      <td>
+        {{case.title}}
+        <pre><code>{{case.example}}</code></pre>
+      </td>
+      <td>{% include audio.html case=case.title title="macOS" file=case.macos %}</td>
+      <td>{% include audio.html case=case.title title="JAWS" file=case.jaws %}</td>
+      <td>{% include audio.html case=case.title title="NVDA" file=case.nvda %}</td>
+      <td>{% include audio.html case=case.title title="iOS" file=case.ios %}</td>
+    </tr>
+  {%-endfor-%}
+  </tbody>
 </table>
 </div>
 
 ## Findings
 
 In VoiceOver on macOS (10.15), all alt text ending with tested punctuation added a brief pause at the end, when read aloud. Alt text ending in a question mark caused an audible inflection change, when read aloud.
+
+## Test case
+
+We generated each audio file from the following code:
+
+<div class='test-case'>
+
+{{page.test}}
+
+</div>
+
+```
+{{page.test}}
+```
