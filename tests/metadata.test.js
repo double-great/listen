@@ -43,7 +43,7 @@ buildList("_posts").forEach((post) => {
         ["macos", "jaws", "nvda", "ios"].map((field) => {
           if (c[field]) {
             const path = `audio/${c[field]}`;
-            t.ok(fs.existsSync(path), `file ${path} does not exist`);
+            t.ok(fs.existsSync(path), `file ${path} exists`);
           }
         });
       });
