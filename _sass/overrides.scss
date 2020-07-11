@@ -5,11 +5,16 @@
 }
 
 .post-meta {
-  color: #757575; // a11y color contrast
+  color: var(--text-accent); // a11y color contrast
 }
 
 a {
-  color: #2371d8; // a11y color contrast
+  color: var(--link-color); // a11y color contrast
+
+  .post-list p &,
+  .post-content & {
+    text-decoration: underline;
+  }
 }
 
 .page-content {

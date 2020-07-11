@@ -8,3 +8,11 @@
 .plyr--audio .plyr__controls {
   background: transparent !important;
 }
+
+.plyr--audio .plyr__control.plyr__tab-focus,
+.plyr--audio .plyr__control:hover,
+.plyr--audio .plyr__control[aria-expanded="true"] {
+  background: none !important;
+  transition: none !important;
+  color: var(--link-color) !important;
+}
