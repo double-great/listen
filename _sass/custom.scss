@@ -1,15 +1,3 @@
-.site-title {
-  letter-spacing: 0 !important;
-}
-
-.post-meta {
-  color: #757575; // a11y color contrast
-}
-
-a {
-  color: #2371d8; // a11y color contrast
-}
-
 a.button {
   display: inline-block;
   padding: 5px 16px;
@@ -18,49 +6,13 @@ a.button {
   border: 1px solid;
   border-radius: 6px;
   margin-bottom: 15px;
+  text-decoration: none;
   box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04),
     inset 0 1px 0 hsla(0, 0%, 100%, 0.25);
 
   &:hover {
     text-decoration: none;
   }
-}
-
-.post-list-heading {
-  text-transform: uppercase;
-  font-size: 1em;
-  letter-spacing: 0.1em;
-  font-weight: bold;
-}
-
-.page-content {
-  flex: unset;
-}
-
-.post-list > li {
-  margin-bottom: 0;
-}
-.post-list {
-  margin-bottom: 30px;
-  h2 {
-    margin-bottom: 0;
-  }
-}
-
-table {
-  display: block;
-  overflow-x: auto;
-  white-space: nowrap;
-  border: 0;
-}
-
-table th,
-table td {
-  vertical-align: top;
-}
-
-figure {
-  margin: 0;
 }
 
 .visually-hidden {
@@ -71,16 +23,6 @@ figure {
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap; /* added line */
-}
-
-@media (min-width: 900px) {
-  .expand {
-    margin: 0 -40px;
-  }
-}
-
-pre {
-  white-space: pre-wrap;
 }
 
 .punctuation-test-case {

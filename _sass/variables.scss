@@ -1,0 +1,7 @@
+$link-color: #2371d8;
+$text-accent: #757575;
+
+:root {
+  --text-accent: #{$text-accent};
+  --link-color: #{$link-color};
+}
