@@ -31,3 +31,18 @@ a.button {
     display: inline-block;
   }
 }
+
+.skip {
+  position: absolute;
+  left: -999rem;
+
+  &:active,
+  &:focus {
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    background-color: #fff;
+  }
+}

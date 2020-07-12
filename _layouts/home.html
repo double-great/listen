@@ -5,7 +5,7 @@ layout: default
 <div class="home">
   {{ content }} {% assign posts = site.posts %} {%- if posts.size > 0 -%} {%- if
   page.list_title -%}
-  <h1 class="post-list-heading">{{ page.list_title }}</h1>
+  <h1 id="content" class="post-list-heading">{{ page.list_title }}</h1>
   {%- endif -%}
   <ul class="post-list">
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -22,7 +22,7 @@ layout: default
     {%- endfor -%}
   </ul>
   {%- endif -%} {%- if page.links -%}
-  <h1 class="post-list-heading">Related Resources</h1>
+  <h2 class="post-list-heading">Related Resources</h2>
   {%- endif -%}
   <ul class="post-list">
     {%- for post in page.links -%}
