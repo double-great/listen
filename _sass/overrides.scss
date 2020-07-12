@@ -11,10 +11,24 @@
 a {
   color: var(--link-color); // a11y color contrast
 
-  .post-list p &,
-  .post-content &,
-  &:focus {
+  &:link,
+  &:visited,
+  &:hover {
     text-decoration: underline;
+  }
+
+  &:focus {
+    outline-color: var(--link-color);
+    outline-color: 2px;
+    outline-style: solid;
+    outline-width: 3px;
+  }
+}
+
+.site-title {
+  &:link,
+  &:visited {
+    text-decoration: none;
   }
 }
 
