@@ -12,7 +12,8 @@ a {
   color: var(--link-color); // a11y color contrast
 
   .post-list p &,
-  .post-content & {
+  .post-content &,
+  &:focus {
     text-decoration: underline;
   }
 }
