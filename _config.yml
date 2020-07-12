@@ -3,9 +3,6 @@ description: "Testing punctuation and markup for audible variances in screen rea
 url: "https://doublegreat.dev"
 baseurl: /listen
 
-theme: minima
-show_excerpts: true
-
 author:
   name: "@double-great"
 
@@ -13,9 +10,12 @@ github: double-great/listen
 
 permalink: /:title/
 
+show_excerpts: true
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo
 
 defaults:
   - scope:

@@ -15,34 +15,9 @@ a.button {
   }
 }
 
-.visually-hidden {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap; /* added line */
-}
-
 .punctuation-test-case {
   img {
     max-width: 24%;
     display: inline-block;
-  }
-}
-
-.skip {
-  position: absolute;
-  left: -999rem;
-
-  &:active,
-  &:focus {
-    position: fixed;
-    left: 0;
-    z-index: 100;
-    display: block;
-    padding: 0.5rem 0.75rem;
-    background-color: #fff;
   }
 }
