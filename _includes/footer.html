@@ -8,7 +8,13 @@
       <ul class="social-media-list">
         <li>
           <a href="{{ 'feed.xml' | relative_url }}">
-            <svg class="svg-icon orange" aria-hidden="true">
+            <svg
+              class="svg-icon orange"
+              focusable="false"
+              aria-hidden="true"
+              width="16"
+              height="16"
+            >
               <use
                 xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"
               ></use></svg
@@ -22,7 +28,13 @@
             rel="me"
             href="https://github.com/{{ site.github }}"
             title="{{ site.github | escape }}"
-            ><svg class="svg-icon grey" aria-hidden="true">
+            ><svg
+              class="svg-icon grey"
+              focusable="false"
+              aria-hidden="true"
+              width="16"
+              height="16"
+            >
               <use
                 xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"
               ></use></svg
