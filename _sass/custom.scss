@@ -3,14 +3,18 @@ a.button {
   padding: 5px 16px;
   white-space: nowrap;
   vertical-align: middle;
-  border: 1px solid;
+  background-color: var(--link-color);
+  color: #fff;
+  border: 1px solid var(--link-color);
   border-radius: 6px;
   margin-bottom: 15px;
   text-decoration: none;
-  box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04),
-    inset 0 1px 0 hsla(0, 0%, 100%, 0.25);
+  box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04);
 
-  &:hover {
+  &:hover,
+  &:focus {
+    background-color: #fff;
+    color: var(--link-color);
     text-decoration: none;
   }
 }
