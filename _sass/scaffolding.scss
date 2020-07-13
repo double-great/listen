@@ -16,8 +16,8 @@ body {
 .wrapper {
   padding: 0 1em;
 
-  @include breakpoint(medium) {
-    max-width: calc(800px - 2em);
+  @include breakpoint($mq-medium) {
+    max-width: calc($mq-medium - 2em);
     margin: 0 auto;
   }
 }

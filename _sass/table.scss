@@ -46,10 +46,11 @@ tbody > tr:last-child > td {
   overflow: hidden;
   position: relative;
 
-  @include breakpoint(medium) {
+  @include bp($mq-medium) {
     margin: 0 -2em;
   }
-  @include breakpoint(large) {
+
+  @include bp($mq-large) {
     margin: 0 -3em;
   }
 }
