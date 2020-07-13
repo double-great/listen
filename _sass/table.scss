@@ -3,15 +3,53 @@ table {
   overflow-x: auto;
   white-space: nowrap;
   border: 0;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid var(--border-color);
 }
 
-table th,
-table td {
+table thead {
+  background-color: #e0e0e0;
+  color: #000;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+table td,
+table th {
+  padding: 0.25em 0.75em;
   vertical-align: top;
+  border-left: 1px solid var(--border-color);
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+  font-size: inherit;
+  margin: 0;
 }
 
-@media (min-width: 900px) {
-  .table-wrapper {
-    margin: 0 -40px;
+table td {
+  background-color: transparent;
+  border-bottom: 1px solid var(--border-color);
+}
+
+thead > tr > th:first-child,
+tbody > tr > td:first-child {
+  border-left-width: 0;
+}
+tbody > tr:last-child > td {
+  border-bottom-width: 0;
+}
+
+.table-wrapper {
+  overflow: hidden;
+  position: relative;
+
+  @include breakpoint(medium) {
+    margin: 0 -2em;
+  }
+  @include breakpoint(large) {
+    margin: 0 -3em;
   }
 }

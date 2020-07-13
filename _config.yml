@@ -12,6 +12,9 @@ permalink: /:title/
 
 show_excerpts: true
 
+header_pages:
+  - related-resources.md
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap

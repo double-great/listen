@@ -1,0 +1,11 @@
+.site-footer {
+  border-top: 1px solid var(--border-color);
+  margin-top: 1em;
+}
+
+.social-media-list {
+  @extend %unlist;
+  .svg-icon {
+    margin-right: 0.25em;
+  }
+}

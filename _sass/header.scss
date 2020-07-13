@@ -1,0 +1,10 @@
+.site-header {
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.25em 0;
+  margin-bottom: 1em;
+}
+
+// TODO: use grid or flexbox?
+nav {
+  float: right;
+}
