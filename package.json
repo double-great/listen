@@ -7,7 +7,7 @@
     "test-content": "extra-eyes _posts/ --dict=library.dic",
     "test": "npm run test-content && tape tests/*.test.js | tap-spec",
     "pretty-quick": "pretty-quick",
-    "stylelint": "stylelint \"_sass/**/*.scss\""
+    "stylelint": "stylelint  \"_sass/**/*.scss\" --fix"
   },
   "repository": {
     "type": "git",
