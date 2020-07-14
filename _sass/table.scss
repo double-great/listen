@@ -2,36 +2,34 @@ table {
   display: block;
   overflow-x: auto;
   white-space: nowrap;
-  border: 0;
-
+  empty-cells: show;
+  border: var(--border-thin) solid var(--color-border);
   border-collapse: collapse;
   border-spacing: 0;
-  empty-cells: show;
-  border: 1px solid var(--border-color);
 }
 
 table thead {
-  background-color: #e0e0e0;
-  color: #000;
+  color: var(--color-text-heading);
   text-align: left;
   vertical-align: bottom;
+  background-color: var(--color-accent);
 }
 
 table td,
 table th {
-  padding: 0.25em 0.75em;
-  vertical-align: top;
-  border-left: 1px solid var(--border-color);
-  border-bottom-width: 0;
-  border-right-width: 0;
-  border-top-width: 0;
-  font-size: inherit;
   margin: 0;
+  padding: 0.25rem 0.75rem;
+  font-size: inherit;
+  vertical-align: top;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left: var(--border-thin) solid var(--color-border);
 }
 
 table td {
   background-color: transparent;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: var(--border-thin) solid var(--color-border);
 }
 
 thead > tr > th:first-child,
@@ -43,14 +41,14 @@ tbody > tr:last-child > td {
 }
 
 .table-wrapper {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 
   @include bp($mq-medium) {
-    margin: 0 -2em;
+    margin: 0 -2rem;
   }
 
   @include bp($mq-large) {
-    margin: 0 -3em;
+    margin: 0 -3rem;
   }
 }

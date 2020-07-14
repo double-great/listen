@@ -1,15 +1,26 @@
+$border-thin: 0.0625rem; // 1px
+$border-thick: 0.1875rem; // 3px
+
+$color-accent: #e0e0e0;
+$color-border: #cbcbcb;
 $color-link: #2371d8;
-$color-text-accent: #757575;
-$color-accent: #cbcbcb;
+$color-text-border: #757575;
+$color-text-body: #333;
+$color-text-heading: #222;
 
 $mq-small: 40em; // 640px
 $mq-medium: 50em; // 800px
 $mq-large: 70em; // 1120px
 
 :root {
-  --text-accent: #{$color-text-accent};
-  --link-color: #{$color-link};
-  --border-color: #{$color-accent};
+  --color-accent: #{$color-accent};
+  --color-border: #{$color-border};
+  --color-link: #{$color-link};
+  --color-text-accent: #{$color-text-accent};
+  --color-text-body: #{$color-text-body};
+  --color-text-heading: #{$color-text-heading};
+  --border-thick: #{$border-thick};
+  --border-thin: #{$border-thin};
 }
 
 @mixin bp($size) {
@@ -29,3 +40,18 @@ $mq-large: 70em; // 1120px
   padding: 0;
   list-style: none;
 }
+
+// Force word wrapping - useful for long URLs
+// https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+// stylelint-disable plugin/no-unsupported-browser-features
+%u-word-wrap {
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -ms-hyphens: auto; // stylelint-disable-line property-no-vendor-prefix
+  -moz-hyphens: auto; // stylelint-disable-line property-no-vendor-prefix
+  -webkit-hyphens: auto; // stylelint-disable-line property-no-vendor-prefix
+  hyphens: auto;
+}
+// stylelint-enable
