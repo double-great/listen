@@ -20,7 +20,7 @@ body {
 .wrapper {
   padding: 0 1rem;
 
-  @include breakpoint($mq-medium) {
+  @include bp($mq-medium) {
     max-width: calc($mq-medium - 2rem);
     margin: 0 auto;
   }
@@ -38,7 +38,13 @@ figure {
   margin: 0;
 }
 
+p {
+  max-width: $content-line-length;
+}
+
 a {
+  position: relative;
+
   &:link {
     color: var(--link-color);
   }

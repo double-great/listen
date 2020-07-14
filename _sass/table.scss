@@ -43,12 +43,4 @@ tbody > tr:last-child > td {
 .table-wrapper {
   position: relative;
   overflow: hidden;
-
-  @include bp($mq-medium) {
-    margin: 0 -2rem;
-  }
-
-  @include bp($mq-large) {
-    margin: 0 -3rem;
-  }
 }
