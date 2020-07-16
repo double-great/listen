@@ -16,31 +16,6 @@ body {
   background-color: #fff;
 }
 
-.wrapper {
-  padding: 0 1rem;
-
-  @include bp($mq-medium) {
-    max-width: calc($mq-medium - 2rem);
-    margin: 0 auto;
-  }
-}
-
-.post-list {
-  @extend %unlist;
-}
-
-pre {
-  white-space: pre-wrap;
-}
-
-figure {
-  margin: 0;
-}
-
-p {
-  max-width: $content-line-length;
-}
-
 a {
   position: relative;
 
@@ -61,6 +36,103 @@ a {
   &:focus {
     text-decoration: underline;
   }
+}
+
+h1,
+%h1,
+h2,
+%h2,
+h3,
+%h3,
+h4,
+%h4,
+h5,
+%h5,
+h6,
+%h6 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  color: $color-text-heading;
+  font-weight: $font-weight-bold;
+  font-family: $font-body;
+  line-height: $line-height-heading;
+}
+
+h1,
+%h1 {
+  font-size: 3rem;
+}
+
+h2,
+%h2 {
+  font-size: 2rem;
+}
+
+h3,
+%h3 {
+  font-size: 1.75rem;
+}
+
+h4,
+%h4 {
+  font-size: 1.25rem;
+}
+
+h5,
+%h5 {
+  font-size: 1rem;
+}
+
+%p,
+p {
+  max-width: $content-line-length;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: $line-height-text;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ul,
+ol {
+  margin: 0.25rem 0 0.75rem 2rem;
+  padding: 0;
+
+  ul,
+  ol {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+p + ul,
+p + ol {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+li {
+  font-size: 1rem;
+  line-height: $line-height-text;
+}
+
+.wrapper {
+  @extend %u-wrap;
+}
+
+.post-list {
+  @extend %unlist;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+figure {
+  margin: 0;
 }
 
 .button {
