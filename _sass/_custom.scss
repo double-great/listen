@@ -1,0 +1,34 @@
+.punctuation-test-case {
+  img {
+    display: inline-block;
+    max-width: 24%;
+  }
+}
+
+.site-footer {
+  margin-top: 1rem;
+  border-top: var(--border-thin) solid var(--color-border);
+}
+
+.social-media-list {
+  @extend %unlist;
+  .svg-icon {
+    margin-right: 0.25rem;
+  }
+}
+
+.site-header {
+  margin-bottom: 1rem;
+  padding: 0.25rem 0;
+  border-bottom: var(--border-thin) solid var(--color-border);
+}
+
+// TODO: use grid or flexbox?
+nav {
+  float: right;
+}
+
+.post-content {
+  max-width: $content-max-width;
+  margin: 0 auto;
+}
