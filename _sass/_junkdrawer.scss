@@ -93,14 +93,39 @@
 }
 
 .site-header {
-  margin-bottom: 1rem;
-  padding: 0.25rem 0;
-  border-bottom: var(--border-thin) solid var(--color-border);
+  padding: 2rem 0;
+}
+
+.site-title {
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  .site-title-icon {
+    display: inline-block;
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: 0.75rem;
+    color: $color-barely;
+    text-align: center;
+    vertical-align: middle;
+    background: $color-link;
+    border-radius: 100%;
+    .svg-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      vertical-align: text-bottom;
+    }
+  }
 }
 
 // TODO: use grid or flexbox?
 nav {
-  float: right;
+  a {
+    font-size: 1rem;
+    text-decoration: none;
+  }
 }
 
 .post-content {
