@@ -1,0 +1,114 @@
+.table-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper {
+  @extend %u-wrap;
+}
+
+.post-list {
+  @extend %unlist;
+
+  li {
+    margin-bottom: 2rem;
+  }
+}
+
+.button {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: var(--color-link);
+  border: var(--border-thin) solid;
+  border-radius: 0.5rem;
+  box-shadow: 0 var(--border-thin) 0 rgba(27, 31, 35, 0.04),
+    inset 0 var(--border-thin) 0 hsla(0, 0%, 100%, 0.25);
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: var(--color-link-active);
+  }
+}
+
+.svg-icon {
+  width: 1rem;
+  height: 1rem;
+  color: var(--text-accent);
+}
+
+.skip {
+  position: absolute;
+  left: -999rem;
+
+  &:active,
+  &:focus {
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    background-color: #fff;
+  }
+}
+
+.punctuation-test-case {
+  img {
+    display: inline-block;
+    max-width: 24%;
+  }
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: var(--border-thin) solid var(--color-border);
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
+}
+
+.social-media-list {
+  @extend %unlist;
+  .svg-icon {
+    margin-right: 0.25rem;
+  }
+}
+
+.social-links {
+  margin-bottom: 0.5rem;
+}
+
+.site-header {
+  margin-bottom: 1rem;
+  padding: 0.25rem 0;
+  border-bottom: var(--border-thin) solid var(--color-border);
+}
+
+// TODO: use grid or flexbox?
+nav {
+  float: right;
+}
+
+.post-content {
+  max-width: $content-max-width;
+  margin: 0 auto;
+}
+
+.post-meta {
+  margin-bottom: 2rem;
+  color: var(--color-text-accent);
+}
