@@ -1,46 +1,47 @@
 table {
   display: block;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
   overflow-x: auto;
   white-space: nowrap;
   empty-cells: show;
   border: var(--border-thin) solid var(--color-border);
   border-collapse: collapse;
   border-spacing: 0;
-}
 
-table thead {
-  color: var(--color-text-heading);
-  text-align: left;
-  vertical-align: bottom;
-  background-color: var(--color-accent);
-}
+  thead {
+    color: var(--color-text-heading);
+    text-align: left;
+    vertical-align: bottom;
+    background-color: var(--color-barely);
+  }
 
-table td,
-table th {
-  margin: 0;
-  padding: 0.25rem 0.75rem;
-  font-size: inherit;
-  vertical-align: top;
-  border-top-width: 0;
-  border-right-width: 0;
-  border-bottom-width: 0;
-  border-left: var(--border-thin) solid var(--color-border);
-}
+  td,
+  th {
+    margin: 0;
+    padding: 0.75rem 1rem 0.5rem;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left: var(--border-thin) solid var(--color-border);
 
-table td {
-  background-color: transparent;
-  border-bottom: var(--border-thin) solid var(--color-border);
-}
+    &:first-child {
+      border-left-width: 0;
+    }
+  }
 
-thead > tr > th:first-child,
-tbody > tr > td:first-child {
-  border-left-width: 0;
-}
-tbody > tr:last-child > td {
-  border-bottom-width: 0;
-}
+  th {
+    vertical-align: bottom;
+  }
 
-.table-wrapper {
-  position: relative;
-  overflow: hidden;
+  td {
+    font-size: 1rem;
+    vertical-align: top;
+    background-color: transparent;
+    border-bottom: var(--border-thin) solid var(--color-border);
+  }
+
+  tr:last-child > td {
+    border-bottom-width: 0;
+  }
 }
