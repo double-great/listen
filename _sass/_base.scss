@@ -20,16 +20,12 @@ a {
   position: relative;
 
   &:link {
-    color: var(--link-color);
+    color: var(--color-link);
   }
 
   &:link,
   &:visited {
-    text-decoration: none;
-
-    .post-content & {
-      text-decoration: underline;
-    }
+    text-decoration: underline;
   }
 
   &:hover,
@@ -56,10 +52,16 @@ h6,
   font-weight: $font-weight-bold;
   font-family: $font-body;
   line-height: $line-height-heading;
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
 }
 
 h1,
 %h1 {
+  margin-top: 2rem;
   font-size: 3rem;
 }
 
@@ -87,7 +89,7 @@ h5,
 p {
   max-width: $content-line-length;
   margin-top: 0.25rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   font-size: 1rem;
   line-height: $line-height-text;
 }
@@ -119,57 +121,21 @@ li {
   line-height: $line-height-text;
 }
 
-.wrapper {
-  @extend %u-wrap;
-}
-
-.post-list {
-  @extend %unlist;
-}
-
 pre {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.75rem;
   white-space: pre-wrap;
+  background-color: var(--color-barely);
+  border-radius: 0.25rem;
 }
 
 figure {
   margin: 0;
 }
 
-.button {
-  display: inline-block;
-  margin-bottom: 1rem;
-  padding: 0.25rem 1rem;
-  white-space: nowrap;
-  text-decoration: none;
-  vertical-align: middle;
-  border: var(--border-thin) solid;
-  border-radius: 0.5rem;
-  box-shadow: 0 var(--border-thin) 0 rgba(27, 31, 35, 0.04),
-    inset 0 var(--border-thin) 0 hsla(0, 0%, 100%, 0.25);
-
-  &:hover,
-  &:focus {
-    text-decoration: none;
-  }
-}
-
-.svg-icon {
-  width: 1rem;
-  height: 1rem;
-  color: var(--text-accent);
-}
-
-.skip {
-  position: absolute;
-  left: -999rem;
-
-  &:active,
-  &:focus {
-    position: fixed;
-    left: 0;
-    z-index: 100;
-    display: block;
-    padding: 0.5rem 0.75rem;
-    background-color: #fff;
+figcaption {
+  table & {
+    @extend %u-visually-hidden;
   }
 }
