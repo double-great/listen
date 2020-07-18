@@ -63,6 +63,20 @@
   }
 }
 
+.home {
+  h1 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+
+    .svg-icon {
+      width: inherit;
+      height: inherit;
+      vertical-align: text-bottom;
+    }
+  }
+}
+
 .punctuation-test-case {
   img {
     display: inline-block;

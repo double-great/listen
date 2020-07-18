@@ -5,7 +5,9 @@ layout: default
 <div class="home">
   {%-if page.content_position != 'bottom'-%}{{content}}{%-endif-%}{% assign
   posts = site.posts %} {%- if posts.size > 0 -%} {%- if page.list_title -%}
-  <h1 id="content" class="post-list-heading">{{ page.list_title }}</h1>
+  <h1 id="content" class="post-list-heading">
+    {% include icon/bookmark.svg %}{{ page.list_title }}
+  </h1>
   {%- endif -%}
   <ul class="post-list">
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
