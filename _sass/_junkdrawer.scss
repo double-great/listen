@@ -94,6 +94,11 @@
 
 .site-header {
   padding: 2rem 0;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .site-title {
