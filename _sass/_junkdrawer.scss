@@ -20,7 +20,7 @@
   text-decoration: none;
   vertical-align: middle;
   background-color: $color-link;
-  border: $border-thin solid;
+  border: $border-thick solid $color-link;
   border-radius: 0.5rem;
   box-shadow: 0 $border-thin 0 rgba(27, 31, 35, 0.04),
     inset 0 $border-thin 0 hsla(0, 0%, 100%, 0.25);
@@ -35,6 +35,17 @@
   &:focus {
     text-decoration: none;
     background-color: $color-link-hover;
+    border-color: $color-link-hover;
+  }
+
+  &:focus {
+    color: $color-text-body;
+    text-decoration: none;
+    background-color: $color-highlight;
+    border: $border-thick solid $color-text-body;
+    outline: $border-thick solid transparent;
+    outline-offset: 0;
+    box-shadow: none;
   }
 }
 
@@ -56,7 +67,6 @@
     z-index: 100;
     display: block;
     padding: 0.5rem 0.75rem;
-    background-color: #fff;
   }
 }
 
@@ -95,19 +105,43 @@
     color: $color-border;
   }
 
-  a:link,
-  a:visited {
-    color: $color-border;
-    text-decoration: none;
+  a {
+    &:link,
+    &:visited {
+      color: $color-border;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: #fff;
+
+      .svg-icon {
+        color: #fff;
+      }
+    }
+
+    &:focus {
+      color: $color-text-body;
+      text-decoration: none;
+      background-color: $color-highlight;
+      outline: $border-thick solid transparent;
+      outline-offset: 0;
+      box-shadow: 0 -0.125rem $color-highlight, 0 0.25rem $color-text-body;
+
+      .svg-icon {
+        color: $color-text-body;
+      }
+    }
   }
 }
 
 .social-media-list {
   @extend %unlist;
   a {
-    display: block;
+    display: inline-block;
     margin-bottom: 0.25rem;
   }
+
   .svg-icon {
     margin-right: 0.25rem;
   }
@@ -128,9 +162,8 @@
     }
   }
 
-  a:link,
-  a:visited {
-    color: $color-link;
+  :link,
+  :visited {
     text-decoration: none;
   }
 }
@@ -142,6 +175,18 @@
   font-weight: $font-weight-black;
   letter-spacing: 0.125rem;
   text-transform: uppercase;
+
+  &:hover {
+    .site-title-icon {
+      background-color: $color-link-hover;
+    }
+  }
+
+  &:focus {
+    .site-title-icon {
+      background-color: $color-text-body;
+    }
+  }
 }
 
 .site-title-icon {
