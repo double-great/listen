@@ -1,7 +1,15 @@
 .table {
   margin-bottom: 2rem;
+  border-top: $border-thick solid $color-border;
+  border-bottom: $border-thick solid $color-border;
+
+  @include bp($mq-medium) {
+    margin-right: -3rem;
+    margin-left: -3rem;
+  }
 
   > :last-child {
+    margin-bottom: 0;
     border-bottom: none;
   }
 }
@@ -20,7 +28,7 @@
   width: 100%;
 
   @include bp($mq-small) {
-    width: unset;
+    width: 15rem;
   }
 }
 
