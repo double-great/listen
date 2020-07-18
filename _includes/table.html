@@ -1,41 +1,33 @@
-<div class="table-wrapper">
-  <table aria-label="Test cases">
-    <thead>
-      <tr>
-        <th scope="col">Test case</th>
-        <th scope="col">VoiceOver<br />macOS 10.15</th>
-        <th scope="col">JAWS 2020<br />Windows 8.1</th>
-        <th scope="col">NVDA 2019.2.1<br />Windows 8.1</th>
-        <th scope="col">VoiceOver<br />iOS 13</th>
-      </tr>
-    </thead>
-    <tbody>
-      {%-for case in include.cases-%}
-      <tr>
-        <td>
-          {{case.title}}
-          <pre><code>{{case.example}}</code></pre>
-        </td>
-        <td>
-          {% if case.macos %}{% include audio.html case=case.title title="macOS"
-          file=case.macos %}{% endif %}
-        </td>
-        <td>
-          {% if case.jaws %}{% include audio.html case=case.title title="JAWS"
-          file=case.jaws %}{% endif %}
-        </td>
-        <td>
-          {% if case.nvda %}{% include audio.html case=case.title title="NVDA"
-          file=case.nvda %}{% endif %}
-        </td>
-        <td>
-          {% if case.ios %}{% include audio.html case=case.title title="iOS"
-          file=case.ios %}{% endif %}
-        </td>
-      </tr>
-      {%-endfor-%}
-    </tbody>
-  </table>
+<div class="table">
+  {%-for case in include.cases-%}
+  <div class="table-grid">
+    <div class="table-grid-title">
+      {{case.title}}
+      <pre><code>{{case.example}}</code></pre>
+    </div>
+    <div class="table-grid-audio">
+      <div class="table-grid-audio-title">VoiceOver macOS&nbsp;10.15</div>
+      {% if case.macos %}{% include audio.html case=case.title title="macOS"
+      file=case.macos %}{% endif %}
+    </div>
+    <div class="table-grid-audio">
+      <div class="table-grid-audio-title">JAWS&nbsp;2020 Windows&nbsp;8.1</div>
+      {% if case.jaws %}{% include audio.html case=case.title title="JAWS"
+      file=case.jaws %}{% endif %}
+    </div>
+    <div class="table-grid-audio">
+      <div class="table-grid-audio-title">
+        NVDA&nbsp;2019.2.1 Windows&nbsp;8.1
+      </div>
+      {% if case.nvda %}{% include audio.html case=case.title title="NVDA"
+      file=case.nvda %}{% endif %}
+    </div>
+    <div class="table-grid-audio">
+      <div class="table-grid-audio-title">VoiceOver iOS&nbsp;13</div>
+      {% if case.ios %}{% include audio.html case=case.title title="iOS"
+      file=case.ios %}{% endif %}
+    </div>
+  </div>
+  {%-endfor-%}
 </div>
-
 <p><a class="button" href="test">View test case page</a></p>

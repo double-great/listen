@@ -1,108 +1,54 @@
-.table-wrapper {
-  position: relative;
-  overflow: hidden;
+.table {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
   @include bp($mq-medium) {
-    margin: 0 -4rem;
+    margin-right: -3rem;
+    margin-left: -3rem;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+    border-bottom: none;
   }
 }
+.table-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: $border-thin solid $color-border;
+}
 
-table {
-  display: block;
+.table-grid-title {
+  flex-shrink: 0;
   width: 100%;
-  max-width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  overflow-x: auto;
-  white-space: nowrap;
-  empty-cells: show;
-  border: $border-thin solid $color-border;
-  border-collapse: collapse;
-  border-spacing: 0;
 
-  thead {
-    color: $color-text-heading;
-    text-align: left;
-    vertical-align: bottom;
-    background-color: $color-barely;
-  }
-
-  td,
-  th {
-    margin: 0;
-    padding: 0.75rem 1rem 0.5rem;
-    border-top-width: 0;
-    border-right-width: 0;
-    border-bottom-width: 0;
-    border-left: $border-thin solid $color-border;
-
-    &:first-child {
-      border-left-width: 0;
-    }
-  }
-
-  th {
-    vertical-align: bottom;
-
-    &[scope="row"] {
-      vertical-align: top;
-    }
-  }
-
-  td {
-    font-size: 1rem;
-    vertical-align: top;
-    background-color: transparent;
-    border-bottom: $border-thin solid $color-border;
-  }
-
-  tr:last-child > td {
-    border-bottom-width: 0;
-  }
-
-  caption {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    text-align: left;
+  @include bp($mq-small) {
+    width: 15rem;
   }
 }
 
-.responsive {
-  @include bp-max($mq-medium) {
-    display: table;
-    max-width: 100%;
-    border: 0;
+.table-grid-audio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 
-    thead {
-      display: none;
-    }
+  @include bp($mq-small) {
+    display: block;
+    width: 5rem;
+  }
+}
 
-    tr {
-      display: block;
-      margin-bottom: 0.75em;
+.table-grid-audio-title {
+  color: $color-text-accent;
+  font-size: 1rem;
 
-      // reset
-      &:last-child > td {
-        border-bottom-width: $border-thin;
-      }
-    }
-
-    td {
-      display: block;
-      text-align: right;
-      border: $border-thin solid $color-accent;
-      border-top: 0;
-
-      // reset
-      &:first-child {
-        border: $border-thin solid $color-accent;
-      }
-
-      &:before {
-        float: left;
-        font-weight: $font-weight-bold;
-        content: attr(data-label);
-      }
-    }
+  @include bp($mq-small) {
+    font-size: 0.9rem;
+    text-align: center;
   }
 }
