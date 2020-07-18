@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  color: var(--color-text-body);
+  color: $color-text-body;
   font-size: 112.5%; // 18px
   font-family: $font-body;
   line-height: 1.5;
@@ -20,7 +20,7 @@ a {
   position: relative;
 
   &:link {
-    color: var(--color-link);
+    color: $color-link;
     text-decoration: underline;
   }
 
@@ -73,11 +73,16 @@ h3,
 
 h4,
 %h4 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 h5,
 %h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+%h6 {
   font-size: 1rem;
 }
 
@@ -122,8 +127,14 @@ pre {
   margin-bottom: 0.5rem;
   padding: 0.5rem 0.75rem;
   white-space: pre-wrap;
-  background-color: var(--color-barely);
+  background-color: $color-barely;
   border-radius: 0.25rem;
+}
+
+input,
+select,
+textarea {
+  font-size: 1rem;
 }
 
 figure {
@@ -134,4 +145,15 @@ figcaption {
   table & {
     @extend %u-visually-hidden;
   }
+}
+
+hr {
+  display: block;
+  box-sizing: content-box;
+  height: $border-thick;
+  margin: 3rem 0;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  border-top: $border-thick solid $color-accent;
 }

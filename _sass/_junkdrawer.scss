@@ -20,14 +20,15 @@
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
   color: #fff;
+  font-size: 1rem;
   white-space: nowrap;
   text-decoration: none;
   vertical-align: middle;
-  background-color: var(--color-link);
-  border: var(--border-thin) solid;
+  background-color: $color-link;
+  border: $border-thin solid;
   border-radius: 0.5rem;
-  box-shadow: 0 var(--border-thin) 0 rgba(27, 31, 35, 0.04),
-    inset 0 var(--border-thin) 0 hsla(0, 0%, 100%, 0.25);
+  box-shadow: 0 $border-thin 0 rgba(27, 31, 35, 0.04),
+    inset 0 $border-thin 0 hsla(0, 0%, 100%, 0.25);
 
   &:link,
   &:visited {
@@ -37,14 +38,14 @@
   &:hover,
   &:focus {
     text-decoration: none;
-    background-color: var(--color-link-active);
+    background-color: $color-link-active;
   }
 }
 
 .svg-icon {
   width: 1rem;
   height: 1rem;
-  color: var(--text-accent);
+  color: $color-text-accent;
 }
 
 .skip {
@@ -73,7 +74,7 @@
   margin-top: 3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: var(--border-thin) solid var(--color-border);
+  border-top: $border-thin solid $color-border;
 
   a:link,
   a:visited {
@@ -167,5 +168,5 @@
 
 .post-meta {
   margin-bottom: 2rem;
-  color: var(--color-text-accent);
+  color: $color-text-accent;
 }

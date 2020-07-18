@@ -29,16 +29,3 @@ $content-line-length: 70ch;
 $line-height-reset: 1;
 $line-height-heading: 1.2;
 $line-height-text: 1.5;
-
-:root {
-  --color-accent: #{$color-accent};
-  --color-barely: #{$color-barely};
-  --color-border: #{$color-border};
-  --color-link: #{$color-link};
-  --color-link-active: #{$color-link-active};
-  --color-text-accent: #{$color-text-accent};
-  --color-text-body: #{$color-text-body};
-  --color-text-heading: #{$color-text-heading};
-  --border-thick: #{$border-thick};
-  --border-thin: #{$border-thin};
-}

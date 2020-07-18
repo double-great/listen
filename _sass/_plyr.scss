@@ -15,10 +15,10 @@
 .plyr--audio .plyr__control:hover,
 .plyr--audio .plyr__control:focus,
 .plyr--audio .plyr__control[aria-expanded="true"] {
-  color: var(--color-link) !important;
+  color: $color-link !important;
   background: none !important;
   outline-style: solid !important;
-  outline-color: var(--color-link) !important;
+  outline-color: $color-link !important;
   transition: none !important;
 }
 // stylelint-enable

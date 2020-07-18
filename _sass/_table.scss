@@ -1,19 +1,20 @@
 table {
-  display: block;
+  width: 100%;
+  max-width: 100%;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   overflow-x: auto;
   white-space: nowrap;
   empty-cells: show;
-  border: var(--border-thin) solid var(--color-border);
+  border: $border-thin solid $color-border;
   border-collapse: collapse;
   border-spacing: 0;
 
   thead {
-    color: var(--color-text-heading);
+    color: $color-text-heading;
     text-align: left;
     vertical-align: bottom;
-    background-color: var(--color-barely);
+    background-color: $color-barely;
   }
 
   td,
@@ -23,7 +24,7 @@ table {
     border-top-width: 0;
     border-right-width: 0;
     border-bottom-width: 0;
-    border-left: var(--border-thin) solid var(--color-border);
+    border-left: $border-thin solid $color-border;
 
     &:first-child {
       border-left-width: 0;
@@ -32,16 +33,66 @@ table {
 
   th {
     vertical-align: bottom;
+
+    &[scope="row"] {
+      vertical-align: top;
+    }
   }
 
   td {
     font-size: 1rem;
     vertical-align: top;
     background-color: transparent;
-    border-bottom: var(--border-thin) solid var(--color-border);
+    border-bottom: $border-thin solid $color-border;
   }
 
   tr:last-child > td {
     border-bottom-width: 0;
+  }
+
+  caption {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: left;
+  }
+}
+
+.responsive {
+  @include bp-max($mq-medium) {
+    display: table;
+    max-width: 100%;
+    border: 0;
+
+    thead {
+      display: none;
+    }
+
+    tr {
+      display: block;
+      margin-bottom: 0.75em;
+
+      // reset
+      &:last-child > td {
+        border-bottom-width: $border-thin;
+      }
+    }
+
+    td {
+      display: block;
+      text-align: right;
+      border: $border-thin solid $color-accent;
+      border-top: 0;
+
+      // reset
+      &:first-child {
+        border: $border-thin solid $color-accent;
+      }
+
+      &:before {
+        float: left;
+        font-weight: $font-weight-bold;
+        content: attr(data-label);
+      }
+    }
   }
 }
