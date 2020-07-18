@@ -19,7 +19,8 @@ body {
 a {
   position: relative;
 
-  &:link {
+  &:link,
+  &:visited {
     color: $color-link;
     text-decoration: underline;
   }
