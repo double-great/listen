@@ -14,5 +14,5 @@
   relative_url }}"
     type="image/x-icon"
   />
-  {%- feed_meta -%} {%- include custom-head.html -%}
+  {%- feed_meta -%} {%- if site.custom_head %}{{site.custom_head}}{%- endif -%}
 </head>
