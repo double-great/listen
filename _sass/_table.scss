@@ -1,4 +1,14 @@
+.table-wrapper {
+  position: relative;
+  overflow: hidden;
+
+  @include bp($mq-medium) {
+    margin: 0 -4rem;
+  }
+}
+
 table {
+  display: block;
   width: 100%;
   max-width: 100%;
   margin-top: 1rem;
