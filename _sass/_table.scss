@@ -54,7 +54,7 @@
   }
 
   @include bp($mq-small) {
-    width: 15rem;
+    width: 13rem;
   }
 }
 
@@ -66,7 +66,7 @@
 
   @include bp($mq-small) {
     display: block;
-    width: 5rem;
+    width: 6.25rem;
   }
 }
 
