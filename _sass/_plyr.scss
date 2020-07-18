@@ -10,10 +10,13 @@
 .plyr--audio .plyr__controls {
   background: transparent !important;
 }
+.plyr__control {
+  border-color: transparent !important;
+  border-style: solid !important;
+  border-width: $border-thick !important;
+}
 
-.plyr--audio .plyr__control.plyr__tab-focus,
 .plyr--audio .plyr__control:hover,
-.plyr--audio .plyr__control:focus,
 .plyr--audio .plyr__control[aria-expanded="true"] {
   color: $color-link !important;
   background: none !important;
@@ -21,4 +24,16 @@
   outline-color: $color-link !important;
   transition: none !important;
 }
+
+.plyr--audio .plyr__control.plyr__tab-focus,
+.plyr--audio .plyr__control:focus {
+  color: $color-text-body !important;
+  background: $color-highlight !important;
+  border: $border-thick solid $color-text-body !important;
+  border-radius: 0;
+  outline: none !important;
+  outline-offset: 0 !important;
+  transition: none !important;
+}
+
 // stylelint-enable
