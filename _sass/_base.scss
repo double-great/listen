@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  color: var(--color-text-body);
+  color: $color-text-body;
   font-size: 112.5%; // 18px
   font-family: $font-body;
   line-height: 1.5;
@@ -20,7 +20,7 @@ a {
   position: relative;
 
   &:link {
-    color: var(--color-link);
+    color: $color-link;
     text-decoration: underline;
   }
 
@@ -127,7 +127,7 @@ pre {
   margin-bottom: 0.5rem;
   padding: 0.5rem 0.75rem;
   white-space: pre-wrap;
-  background-color: var(--color-barely);
+  background-color: $color-barely;
   border-radius: 0.25rem;
 }
 
