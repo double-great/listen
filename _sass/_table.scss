@@ -6,9 +6,9 @@
   }
 }
 .table-grid {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: minmax(5rem, 1fr) 5.25rem 5.25rem 5.25rem 5.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -16,10 +16,31 @@
 }
 
 .table-grid-title {
-  font-size: 0.75rem;
-  text-align: center;
+  flex-shrink: 0;
+  width: 100%;
+
+  @include bp($mq-small) {
+    width: unset;
+  }
 }
 
-.visually-hidden {
-  @extend %u-visually-hidden--hide-focus;
+.table-grid-audio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  @include bp($mq-small) {
+    display: block;
+    width: 5rem;
+  }
+}
+
+.table-grid-audio-title {
+  font-size: 1rem;
+
+  @include bp($mq-small) {
+    font-size: 0.9rem;
+    text-align: center;
+  }
 }

@@ -6,13 +6,17 @@
   align-items: center;
   max-width: 5rem;
   height: 100%;
-  margin: 0 auto;
+
   padding: 0.25rem;
   color: $color-text-body;
   font-weight: 400;
   font-family: inherit;
   direction: ltr;
   border-radius: 0.25rem;
+
+  @include bp($mq-small) {
+    margin: 0 auto;
+  }
 }
 
 .plyr audio {

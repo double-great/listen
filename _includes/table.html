@@ -1,27 +1,29 @@
 <div class="table">
   {%-for case in include.cases-%}
   <div class="table-grid">
-    <div>
+    <div class="table-grid-title">
       {{case.title}}
       <pre><code>{{case.example}}</code></pre>
     </div>
-    <div>
-      <div class="table-grid-title">VoiceOver<br />macOS 10.15</div>
+    <div class="table-grid-audio">
+      <div class="table-grid-audio-title">VoiceOver macOS&nbsp;10.15</div>
       {% if case.macos %}{% include audio.html case=case.title title="macOS"
       file=case.macos %}{% endif %}
     </div>
-    <div>
-      <div class="table-grid-title">JAWS 2020<br />Windows 8.1</div>
+    <div class="table-grid-audio">
+      <div class="table-grid-audio-title">JAWS&nbsp;2020 Windows&nbsp;8.1</div>
       {% if case.jaws %}{% include audio.html case=case.title title="JAWS"
       file=case.jaws %}{% endif %}
     </div>
-    <div>
-      <div class="table-grid-title">NVDA 2019.2.1<br />Windows 8.1</div>
+    <div class="table-grid-audio">
+      <div class="table-grid-audio-title">
+        NVDA&nbsp;2019.2.1 Windows&nbsp;8.1
+      </div>
       {% if case.nvda %}{% include audio.html case=case.title title="NVDA"
       file=case.nvda %}{% endif %}
     </div>
-    <div>
-      <div class="table-grid-title">VoiceOver<br />iOS 13</div>
+    <div class="table-grid-audio">
+      <div class="table-grid-audio-title">VoiceOver iOS 13</div>
       {% if case.ios %}{% include audio.html case=case.title title="iOS"
       file=case.ios %}{% endif %}
     </div>
