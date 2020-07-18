@@ -8,7 +8,7 @@
   min-width: 1.75rem !important;
 }
 .plyr--audio .plyr__controls {
-  background-color: transparent !important;
+  background: transparent !important;
 }
 
 .plyr--audio .plyr__control.plyr__tab-focus,
@@ -16,7 +16,7 @@
 .plyr--audio .plyr__control:focus,
 .plyr--audio .plyr__control[aria-expanded="true"] {
   color: $color-link !important;
-  background-color: none !important;
+  background: none !important;
   outline-style: solid !important;
   outline-color: $color-link !important;
   transition: none !important;
