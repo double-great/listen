@@ -1,8 +1,10 @@
 <div class="table">
   {%-for case in include.cases-%}
-  <div class="table-grid">
+  <div class="table-grid" id="{{case.title | slugify}}">
     <div class="table-grid-title">
-      {{case.title}}
+      <a href="#{{case.title | slugify}}"
+        >{% include icon/hash.svg %}{{case.title}}</a
+      >
       <pre><code>{{case.example}}</code></pre>
     </div>
     <div class="table-grid-audio">

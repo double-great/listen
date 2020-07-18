@@ -26,6 +26,24 @@
   flex-shrink: 0;
   width: 100%;
 
+  a {
+    position: relative;
+    text-decoration: none;
+
+    &:hover .svg-icon,
+    &:focus .svg-icon {
+      position: absolute;
+      top: 0.1rem;
+      left: -1rem;
+      display: block;
+      color: $color-link-hover;
+    }
+
+    .svg-icon {
+      display: none;
+    }
+  }
+
   @include bp($mq-small) {
     width: 15rem;
   }
