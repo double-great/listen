@@ -25,9 +25,18 @@
 .table-grid-title {
   flex-shrink: 0;
   width: 100%;
+  font-size: 1rem;
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
   a {
     position: relative;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: $font-weight-bold;
     text-decoration: none;
 
     &:hover .svg-icon,
