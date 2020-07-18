@@ -1,5 +1,5 @@
 .table {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border-top: $border-thick solid $color-border;
   border-bottom: $border-thick solid $color-border;
 
@@ -45,6 +45,7 @@
 }
 
 .table-grid-audio-title {
+  color: $color-text-accent;
   font-size: 1rem;
 
   @include bp($mq-small) {
