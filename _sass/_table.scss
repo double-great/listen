@@ -1,5 +1,6 @@
 table {
-  display: block;
+  width: 100%;
+  max-width: 100%;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   overflow-x: auto;
@@ -32,6 +33,10 @@ table {
 
   th {
     vertical-align: bottom;
+
+    &[scope="row"] {
+      vertical-align: top;
+    }
   }
 
   td {
@@ -43,5 +48,51 @@ table {
 
   tr:last-child > td {
     border-bottom-width: 0;
+  }
+
+  caption {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: left;
+  }
+}
+
+.responsive {
+  @include bp-max($mq-medium) {
+    display: table;
+    max-width: 100%;
+    border: 0;
+
+    thead {
+      display: none;
+    }
+
+    tr {
+      display: block;
+      margin-bottom: 0.75em;
+
+      // reset
+      &:last-child > td {
+        border-bottom-width: $border-thin;
+      }
+    }
+
+    td {
+      display: block;
+      text-align: right;
+      border: $border-thin solid $color-accent;
+      border-top: 0;
+
+      // reset
+      &:first-child {
+        border: $border-thin solid $color-accent;
+      }
+
+      &:before {
+        float: left;
+        font-weight: $font-weight-bold;
+        content: attr(data-label);
+      }
+    }
   }
 }
