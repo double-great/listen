@@ -96,40 +96,67 @@
   padding: 2rem 0;
 
   .wrapper {
-    display: flex;
-    justify-content: space-between;
+    @include bp($mq-small) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  a:link,
+  a:visited {
+    color: $color-link;
+    text-decoration: none;
   }
 }
 
 .site-title {
+  display: block;
+  flex-shrink: 0;
+  max-width: 100%;
   font-weight: $font-weight-bold;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.125rem;
   text-transform: uppercase;
-  text-decoration: none;
+}
 
-  .site-title-icon {
-    display: inline-block;
-    width: 1.75rem;
-    height: 1.75rem;
-    margin-right: 0.75rem;
-    color: $color-barely;
-    text-align: center;
-    vertical-align: middle;
-    background: $color-link;
-    border-radius: 100%;
-    .svg-icon {
-      width: 1.25rem;
-      height: 1.25rem;
-      vertical-align: text-bottom;
-    }
+.site-title-icon {
+  display: inline-block;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 0.25rem;
+  color: $color-barely;
+  text-align: center;
+  vertical-align: middle;
+  background: $color-link;
+  border-radius: 100%;
+}
+.site-title-icon .svg-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  vertical-align: text-top;
+}
+
+.site-header nav {
+  margin-top: 1rem;
+
+  @include bp($mq-small) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0;
   }
 }
 
-// TODO: use grid or flexbox?
-nav {
-  a {
-    font-size: 1rem;
-    text-decoration: none;
+.site-header .page-link {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+
+  @include bp($mq-small) {
+    width: auto;
+    margin-bottom: 0;
+    margin-left: 1rem;
   }
 }
 
