@@ -33,3 +33,12 @@
     url("fonts/Inter-Bold.woff2") format("woff2");
   font-display: fallback;
 }
+
+@font-face {
+  font-weight: 900;
+  font-family: "Inter";
+  font-style: normal;
+  src: local("Inter Black"), local("Inter-Black"),
+    url("fonts/Inter-Black.woff2") format("woff2");
+  font-display: fallback;
+}
