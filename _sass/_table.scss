@@ -1,8 +1,6 @@
 .table {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  border-top: $border-thick solid $color-border;
-  border-bottom: $border-thick solid $color-border;
 
   @include bp($mq-medium) {
     margin-right: -3rem;
