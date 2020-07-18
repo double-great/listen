@@ -87,25 +87,35 @@
 
 .site-footer {
   margin-top: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-top: $border-thin solid $color-border;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: $color-barely;
+  background: $color-darkest;
+
+  .svg-icon {
+    color: $color-border;
+  }
 
   a:link,
   a:visited {
+    color: $color-border;
     text-decoration: none;
   }
 }
 
 .social-media-list {
   @extend %unlist;
+  a {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
   .svg-icon {
     margin-right: 0.25rem;
   }
 }
 
 .social-links {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .site-header {
