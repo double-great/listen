@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 5rem;
   height: 100%;
   padding: 0.25rem;
   color: $color-text-body;
@@ -16,6 +15,11 @@
   @include bp($mq-small) {
     margin: 0 auto;
   }
+}
+
+.plyr,
+audio {
+  max-width: 5rem;
 }
 
 .plyr audio {
