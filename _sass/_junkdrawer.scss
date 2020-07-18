@@ -94,14 +94,71 @@
 }
 
 .site-header {
-  margin-bottom: 1rem;
-  padding: 0.25rem 0;
-  border-bottom: $border-thin solid $color-border;
+  padding: 2rem 0;
+
+  .wrapper {
+    @include bp($mq-small) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  a:link,
+  a:visited {
+    color: $color-link;
+    text-decoration: none;
+  }
 }
 
-// TODO: use grid or flexbox?
-nav {
-  float: right;
+.site-title {
+  display: block;
+  flex-shrink: 0;
+  max-width: 100%;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+.site-title-icon {
+  display: inline-block;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 0.25rem;
+  text-align: center;
+  vertical-align: middle;
+  background: $color-link;
+  border-radius: 100%;
+}
+.site-title-icon .svg-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: $color-barely;
+  vertical-align: text-top;
+}
+
+.site-header nav {
+  margin-top: 1rem;
+
+  @include bp($mq-small) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+}
+
+.site-header .page-link {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+
+  @include bp($mq-small) {
+    width: auto;
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
 }
 
 .post-content {
