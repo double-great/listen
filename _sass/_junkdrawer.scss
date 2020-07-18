@@ -79,6 +79,7 @@
     .svg-icon {
       width: inherit;
       height: inherit;
+      margin-left: -#{$border-thick};
       vertical-align: text-bottom;
     }
   }
