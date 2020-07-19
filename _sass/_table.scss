@@ -1,0 +1,92 @@
+.table {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  @include bp($mq-medium) {
+    margin-right: -3rem;
+    margin-left: -3rem;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+.table-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem 0.5rem;
+  border-bottom: $border-thin solid $color-border;
+
+  @include bp($mq-small) {
+    flex-wrap: nowrap;
+  }
+
+  &:target {
+    border-bottom: 0;
+    a:link,
+    a:visited,
+    .table-grid-audio-title {
+      color: $color-text-body;
+    }
+  }
+}
+
+.table-grid-title {
+  flex-grow: 1;
+  width: 100%;
+  font-size: 1rem;
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  a {
+    position: relative;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: $font-weight-bold;
+    text-decoration: none;
+
+    &:hover .svg-icon,
+    &:focus .svg-icon {
+      position: absolute;
+      top: 0.1rem;
+      left: -1rem;
+      display: block;
+      color: $color-link-hover;
+    }
+
+    .svg-icon {
+      display: none;
+    }
+  }
+
+  @include bp($mq-small) {
+    width: 10rem;
+  }
+}
+
+.table-grid-audio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  @include bp($mq-small) {
+    display: block;
+    width: 7rem;
+  }
+}
+
+.table-grid-audio-title {
+  color: $color-text-accent;
+  font-size: 1rem;
+
+  @include bp($mq-small) {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}

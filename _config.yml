@@ -3,9 +3,6 @@ description: "Testing punctuation and markup for audible variances in screen rea
 url: "https://doublegreat.dev"
 baseurl: /listen
 
-theme: minima
-show_excerpts: true
-
 author:
   name: "@double-great"
 
@@ -13,9 +10,20 @@ github: double-great/listen
 
 permalink: /:title/
 
+show_excerpts: true
+
+header_pages:
+  - related-resources.md
+
+logo: <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+
+custom_head: |
+  <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo
 
 defaults:
   - scope:

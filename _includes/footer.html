@@ -1,4 +1,4 @@
-<footer class="site-footer h-card">
+<footer class="site-footer">
   <div class="wrapper">
     <div>
       <p>{{ site.description | escape }}</p>
@@ -8,17 +8,7 @@
       <ul class="social-media-list">
         <li>
           <a href="{{ 'feed.xml' | relative_url }}">
-            <svg
-              class="svg-icon orange"
-              focusable="false"
-              aria-hidden="true"
-              width="16"
-              height="16"
-            >
-              <use
-                xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"
-              ></use></svg
-            ><span>Subscribe</span>
+            {% include icon/rss.svg %}<span>Subscribe</span>
           </a>
         </li>
 
@@ -28,24 +18,42 @@
             rel="me"
             href="https://github.com/{{ site.github }}"
             title="{{ site.github | escape }}"
-            ><svg
-              class="svg-icon grey"
-              focusable="false"
-              aria-hidden="true"
-              width="16"
-              height="16"
-            >
-              <use
-                xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"
-              ></use></svg
-            ><span>GitHub</span></a
+            >{% include icon/github.svg %}<span>GitHub</span></a
           >
         </li>
         {%- endif -%}
       </ul>
     </div>
-    <div>
-      <p>Made by <a href="{{site.url}}">Double Great</a></p>
+    <div class="site-footer-logo">
+      <p>Made by <a href="{{site.url}}">Double Great</a>.</p>
     </div>
   </div>
 </footer>
+
+<script>
+  var menuButton = document.querySelector("#db-menu-button"),
+    menu = document.querySelector("#db-site-menu");
+
+  if (menu && menuButton) {
+    menuHide();
+    menuButton.addEventListener("click", menuToggle, false);
+  }
+
+  function menuToggle(event) {
+    if (event.target.getAttribute("aria-expanded") == "false") {
+      menuShow();
+    } else {
+      menuHide();
+    }
+  }
+
+  function menuShow() {
+    menu.setAttribute("aria-hidden", "false");
+    menuButton.setAttribute("aria-expanded", "true");
+  }
+
+  function menuHide() {
+    menu.setAttribute("aria-hidden", "true");
+    menuButton.setAttribute("aria-expanded", "false");
+  }
+</script>
