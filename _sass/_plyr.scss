@@ -107,8 +107,8 @@ audio {
   color: $color-text-body;
   text-decoration: none;
   background-color: $color-highlight;
+  border: $border-thick solid $color-text-body;
   outline: 0;
   outline-offset: 0;
-  border: $border-thick solid $color-text-body;
   box-shadow: 0;
 }
