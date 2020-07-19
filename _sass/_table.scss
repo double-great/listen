@@ -16,14 +16,29 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1.5rem 0.5rem;
   border-bottom: $border-thin solid $color-border;
+
+  @include bp($mq-small) {
+    flex-wrap: nowrap;
+  }
+
+  &:target {
+    border-bottom: 0;
+    pre,
+    code {
+      background-color: $color-barely;
+    }
+    a:link,
+    a:visited,
+    .table-grid-audio-title {
+      color: $color-text-body;
+    }
+  }
 }
 
 .table-grid-title {
-  flex-shrink: 0;
+  flex-grow: 1;
   width: 100%;
   font-size: 1rem;
 
@@ -54,7 +69,7 @@
   }
 
   @include bp($mq-small) {
-    width: 13rem;
+    width: 10rem;
   }
 }
 
@@ -66,7 +81,7 @@
 
   @include bp($mq-small) {
     display: block;
-    width: 6.25rem;
+    width: 7rem;
   }
 }
 
