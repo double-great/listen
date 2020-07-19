@@ -49,6 +49,19 @@ a {
   }
 }
 
+:target {
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: $color-text-body;
+  text-decoration: none;
+  background-color: $color-highlight;
+  outline: $border-thick solid transparent;
+  outline-offset: 0;
+  box-shadow: 0 -0.125rem $color-highlight, 0 0.25rem $color-text-body;
+}
+
 h1,
 %h1,
 h2,
