@@ -171,10 +171,13 @@
 }
 
 .site-menu-button {
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
   background: transparent;
   border: none;
   cursor: pointer;
-  appearance: none; // stylelint-disable-line plugin/no-unsupported-browser-features
+  -webkit-appearance: none; // stylelint-disable-line
 
   svg {
     width: 1.5rem;
