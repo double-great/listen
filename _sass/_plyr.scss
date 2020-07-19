@@ -45,7 +45,7 @@ audio {
   overflow: visible;
   color: inherit;
   background: transparent;
-  border: 0;
+  border: $border-thick solid transparent;
   border-radius: 0.25rem;
   cursor: pointer;
 }
@@ -107,7 +107,8 @@ audio {
   color: $color-text-body;
   text-decoration: none;
   background-color: $color-highlight;
-  outline: $border-thick solid transparent;
+  outline: 0;
   outline-offset: 0;
-  box-shadow: 0 -0.125rem $color-highlight, 0 0.25rem $color-text-body;
+  border: $border-thick solid $color-text-body;
+  box-shadow: 0;
 }
