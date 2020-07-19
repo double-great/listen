@@ -23,6 +23,18 @@
   @include bp($mq-small) {
     flex-wrap: nowrap;
   }
+
+  &:target {
+    pre,
+    code {
+      background-color: $color-barely;
+    }
+    a:link,
+    a:visited,
+    .table-grid-audio-title {
+      color: $color-text-body;
+    }
+  }
 }
 
 .table-grid-title {
