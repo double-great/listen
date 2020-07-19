@@ -25,10 +25,6 @@
 
   &:target {
     border-bottom: 0;
-    pre,
-    code {
-      background-color: $color-barely;
-    }
     a:link,
     a:visited,
     .table-grid-audio-title {
