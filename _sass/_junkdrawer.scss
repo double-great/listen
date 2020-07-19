@@ -188,30 +188,22 @@
 }
 .site-menu {
   display: none;
+  width: 100%;
+  margin-top: 1rem;
+  background: $color-barely;
+  border-radius: 0.25rem;
 
   &.active {
     display: block;
   }
 
-  width: 100%;
-  margin-top: 1rem;
-  padding: 2rem 0;
-  background: $color-link;
-
   .page-link {
     display: block;
     width: 100%;
-    margin-bottom: 0.25rem;
-
-    &:link,
-    &:visited {
-      color: $color-barely;
-    }
-    &:focus {
-      color: $color-link-hover;
-    }
-    &:hover {
-      text-decoration: underline;
+    padding: 0.5rem 1rem;
+    border-bottom: $border-thin solid $color-white;
+    &:last-child {
+      border-bottom: 0;
     }
   }
 }

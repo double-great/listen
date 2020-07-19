@@ -19,16 +19,13 @@
     >
       {% include icon/menu.svg %}
     </button>
-    {%- endif -%}
-  </div>
-  {%-if page_paths-%}
-  <nav
-    id="db-site-menu"
-    class="site-menu"
-    role="menu"
-    aria-labelledby="db-menu-button"
-  >
-    <div class="wrapper">
+
+    <nav
+      id="db-site-menu"
+      class="site-menu"
+      role="menu"
+      aria-labelledby="db-menu-button"
+    >
       {%- for path in page_paths -%} {%- assign my_page = site.pages | where:
       "path", path | first -%} {%- if my_page.title -%}
       <a
@@ -38,7 +35,7 @@
         >{{ my_page.title | escape }}</a
       >
       {%- endif -%} {%- endfor -%}
-    </div>
-  </nav>
-  {%- endif -%}
+    </nav>
+    {%- endif -%}
+  </div>
 </header>
