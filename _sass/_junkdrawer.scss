@@ -210,6 +210,9 @@
     &:focus {
       color: $color-link-hover;
     }
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
