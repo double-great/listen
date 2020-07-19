@@ -8,6 +8,8 @@ author:
 
 github: double-great/listen
 
+remote_theme: double-great/great-great-jekyll-theme@main
+
 permalink: /:title/
 
 show_excerpts: true
@@ -24,6 +26,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo
+  - jekyll-remote-theme
 
 defaults:
   - scope:
