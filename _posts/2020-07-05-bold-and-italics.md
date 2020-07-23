@@ -39,8 +39,8 @@ cases:
 
 This test details the audible effects of bold and italic markup when read by different screen readers.
 
-{% include table.html cases=page.cases %}
-
 ## Findings
 
 In all screen readers tested, **no audible distinction** is present between unstyled text, `<b>`, `<strong>`, `<i>`, and `<em>`.
+
+{% include table.html cases=page.cases %}
