@@ -79,6 +79,14 @@
     display: block;
     width: 7rem;
   }
+
+  &:target {
+    a:link,
+    a:visited,
+    .table-grid-audio-title {
+      color: $color-text-body;
+    }
+  }
 }
 
 .table-grid-audio-title {
