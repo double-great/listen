@@ -100,12 +100,22 @@ cases:
     ios: punctuation-14-smart-quotes-ios-voiceover-13.mp3
 ---
 
-This test details audible effects of punctuation in alternative text when read by different screen readers.
+This test details audible effects of punctuation in alternative text when read by different screen readers. Default settings are used in screen reader tests.
 
 ## Findings
 
-In VoiceOver on macOS 10.15 and JAWS 2020, alt text ending with punctuation added a brief pause at the end, when read aloud. NVDA 2019.2.1 and VoiceOver on iOS 13 did not change pacing with or without punctuation.
+In VoiceOver on macOS 10.15{% include ref.html id="ends-in-a-period-macos" %} and JAWS 2020{% include ref.html id="ends-in-a-period-jaws" %}, alt text ending with punctuation added a brief pause at the end, when read aloud. NVDA 2019.2.1 and VoiceOver on iOS 13 did not change pacing with or without punctuation.
 
-Alt text ending in a question mark caused an audible inflection change, when read aloud in [VoiceOver on macOS 10.15](#ends-in-a-question-mark-macos), [VoiceOver on iOS 13](#ends-in-a-question-mark-ios), and [JAWS 2020](#ends-in-a-question-mark-jaws). [NVDA 2019.2.1](#ends-in-an-exclamation-point-nvda) adds a subtle inflection change when using an exclamation point.
+Alt text ending in a question mark caused an audible inflection change, when read aloud in VoiceOver on macOS 10.15{% include ref.html id="ends-in-a-question-mark-macos" %}, VoiceOver on iOS 13{% include ref.html id="ends-in-a-question-mark-ios" %}, and JAWS 2020{% include ref.html id="ends-in-a-question-mark-jaws" %}. NVDA 2019.2.1{% include ref.html id="ends-in-an-exclamation-point-nvda" %} adds a subtle inflection change when using an exclamation point.
+
+A comma in alt text adds a brief pause in all screen readers.
+
+JAWS announces most punctuation explicitly, including hyphen (dash){% include ref.html id="contains-a-hyphen-jaws" %}, en dash{% include ref.html id="contains-an-en-dash-jaws" %}, em dash{% include ref.html id="contains-an-em-dash-jaws" %}, false ellipsis (three dots){% include ref.html id="contains-three-periods-jaws" %}, colon{% include ref.html id="contains-a-colon-jaws" %}, semicolon{% include ref.html id="contains-a-semicolon-jaws" %}, dumb quotes{% include ref.html id="contains-dumb-quotes-jaws" %}, and smart quotes{% include ref.html id="contains-smart-quotes-jaws" %}. The exception is ellipsis. In JAWS, an ellipsis{% include ref.html id="contains-an-ellipsis-jaws" %} adds a pause.
+
+VoiceOver on macOS consistently adds a pause when encountering punctuation, but does not explicitly name the punctuation used.
+
+VoiceOver on iOS adds a pause when encountering a hyphen{% include ref.html id="contains-a-hyphen-ios" %}, en dash{% include ref.html id="contains-an-en-dash-ios" %}, em dash{% include ref.html id="contains-an-em-dash-ios" %}, colon{% include ref.html id="contains-a-colon-ios" %}, or semicolon{% include ref.html id="contains-a-semicolon-ios" %}. Ellipsis, dumb quotes, and smart quotes do not cause a pause. One outlier is a false ellipsis{% include ref.html id="contains-three-periods-ios" %}, where VoiceOver on iOS announces it as an ellipsis, explicitly.
+
+NVDA adds a pause when encountering an en dash{% include ref.html id="contains-an-en-dash-nvda" %}, false ellipsis{% include ref.html id="contains-three-periods-nvda" %}, ellipsis{% include ref.html id="contains-an-ellipsis-nvda" %}, colon{% include ref.html id="contains-a-colon-nvda" %}, or semicolon{% include ref.html id="contains-a-semicolon-nvda" %}. Hyphen{% include ref.html id="contains-a-hyphen-nvda" %}, em dash{% include ref.html id="contains-an-em-dash-nvda" %}, dumb quotes{% include ref.html id="contains-dumb-quotes-nvda" %}, and smart quotes{% include ref.html id="contains-smart-quotes-nvda" %} do not cause a pause.
 
 {% include table.html cases=page.cases %}

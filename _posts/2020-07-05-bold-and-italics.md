@@ -37,7 +37,7 @@ cases:
     ios: bold-italics-em-tag-ios-voiceover-13.mp3
 ---
 
-This test details the audible effects of bold and italic markup when read by different screen readers.
+This test details the audible effects of bold and italic markup when read by different screen readers. Default settings are used in screen reader tests.
 
 ## Findings
 
