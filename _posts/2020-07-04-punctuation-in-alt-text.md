@@ -100,12 +100,22 @@ cases:
     ios: punctuation-14-smart-quotes-ios-voiceover-13.mp3
 ---
 
-This test details audible effects of punctuation in alternative text when read by different screen readers.
-
-{% include table.html cases=page.cases %}
+This test details audible effects of punctuation in alternative text when read by different screen readers. Default settings are used in screen reader tests.
 
 ## Findings
 
 In VoiceOver on macOS 10.15 and JAWS 2020, alt text ending with punctuation added a brief pause at the end, when read aloud. NVDA 2019.2.1 and VoiceOver on iOS 13 did not change pacing with or without punctuation.
 
 Alt text ending in a question mark caused an audible inflection change, when read aloud in VoiceOver on macOS 10.15, VoiceOver on iOS 13, and JAWS 2020. NVDA 2019.2.1 adds a subtle inflection change when using an exclamation point.
+
+A comma in alt text adds a brief pause in all screen readers.
+
+JAWS announces most punctuation explicitly, including hyphen (dash), en dash, em dash, false ellipsis (three dots), colon, semicolon, dumb quotes, and smart quotes. The exception is ellipsis. In JAWS, an [ellipsis](#contains-an-ellipsis-jaws) adds a pause.
+
+VoiceOver on macOS consistently adds a pause when encountering punctuation, but does not explicitly name the punctuation used.
+
+VoiceOver on iOS adds a pause when encountering a hyphen, en dash, em dash, colon, or semicolon. Ellipsis, dumb quotes, and smart quotes do not cause a pause. One outlier is a [false ellipsis](#contains-three-periods-ios), where VoiceOver on iOS announces it as an ellipsis, explicitly.
+
+NVDA adds a pause when encountering an en dash, false ellipsis, ellipsis, colon, or semicolon. Hyphen, em dash, dumb quotes, and smart quotes do not cause a pause.
+
+{% include table.html cases=page.cases %}
