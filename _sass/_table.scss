@@ -1,5 +1,5 @@
 .table {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
   @include bp($mq-medium) {
     margin-right: -3rem;
@@ -15,7 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1.5rem 0.5rem;
+  padding: 1rem 0.25rem;
   border-bottom: $border-thin solid $color-border;
 
   @include bp($mq-small) {
@@ -23,7 +23,7 @@
   }
 
   &:target {
-    border-bottom: 0;
+    border-bottom-color: transparent;
     a:link,
     a:visited,
     .table-grid-audio-title {
