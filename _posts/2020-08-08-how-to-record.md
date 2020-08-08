@@ -1,8 +1,9 @@
 ---
 title: How to record audio from screen readers
+cases: false
 ---
 
-This project captures the audio output from multiple screen readers. The process to capture each recording is a bit of a challenge as it requires different operating systems and platforms. There are many ways to capture these recordings. Here is one workflow.
+This project captures the audio output from several screen readers. The process to capture each recording is a bit of a challenge as it requires different operating systems and platforms. You can capture these recordings in many ways. Here is one workflow.
 
 ## Software
 
@@ -11,7 +12,7 @@ This project captures the audio output from multiple screen readers. The process
 - [NVDA](https://www.nvaccess.org/download/) - screen reader for Windows
 - [JAWS](https://www.freedomscientific.com/products/software/jaws/) - screen reader for Windows that provides speech and Braille output for computer applications
 - [Soundflower](https://github.com/mattingalls/Soundflower) - record system audio output directly without sending it into the air to record
-- [Quicktime](https://support.apple.com/quicktime) - play and record audio and video files on macOS
+- [QuickTime](https://support.apple.com/quicktime) - play and record audio and video files on macOS
 
 ## Hardware and platforms
 
@@ -20,7 +21,7 @@ This project captures the audio output from multiple screen readers. The process
 
 ## Configure macOS to pass audio to an application
 
-These steps will show you how to use Soundflower to pass audio to Quicktime to create a recording.
+These steps will show you how to use Soundflower to pass audio to QuickTime to create a recording.
 
 Start by following the [installation instructions](https://github.com/mattingalls/Soundflower/releases/tag/2.0b2) from these (now several years old) Soundflower release notes:
 
@@ -35,7 +36,7 @@ Start by following the [installation instructions](https://github.com/mattingall
 
 The music you started playing in step 2 should continue to play. Now the audio is going to your built-in audio and is being passed to Soundflower for recording elsewhere. With the music continuing to play:
 
-1. Open up Quicktime
+1. Open up QuickTime
 2. File > New Audio Recording
 3. Click the down arrow (next to record button) and choose "Soundflower (2ch)" as the input
    ![Select audio output for QuickTime test]({{site.baseurl}}/assets/quicktime-test.png)
@@ -82,6 +83,6 @@ For quick editing you can re-record the audio using Audacity while playing back 
 
 ## Editing
 
-Using Audacity, open the full screen reader recording and begin to add labels, using <kbd>⌘</kbd> + <kbd>B</kbd>. Marking and labelling the audio file makes the clip export process easier to manage.
+Using Audacity, open the full screen reader recording and begin to add labels, using <kbd>⌘</kbd> + <kbd>B</kbd>. Marking and labeling the audio file makes the clip export process easier to manage.
 
 With a marked audio timeline, highlight the section of the timeline to export. To export the highlighted audio: Export > Export Selected Audio > Save as MP3
