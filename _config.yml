@@ -8,7 +8,7 @@ author:
 
 github: double-great/listen
 
-remote_theme: double-great/great-great-jekyll-theme@gh-pages
+remote_theme: double-great/great-great-jekyll-theme@main
 
 permalink: /:title/
 
