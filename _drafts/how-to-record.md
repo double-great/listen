@@ -2,7 +2,7 @@
 title: How to record audio from screen readers
 ---
 
-Capturing the audio output from all of these screen readers is a bit of a challenge. There are many ways to do it. Here is one workflow.
+This project captures the audio output from multiple screen readers. The process to capture each recording is a bit of a challenge as it requires different operating systems and platforms. There are many ways to capture these recordings. Here is one workflow.
 
 ## Software
 
