@@ -2,16 +2,16 @@
 title: How to Record Audio from Screen Readers
 ---
 
-Capturing the audio output from all of these screen readers is a bit of a challenge. There are many ways to do it. Here is one.
+Capturing the audio output from all of these screen readers is a bit of a challenge. There are many ways to do it. Here is one workflow.
 
 ## Software
 
-- [Audacity](https://www.audacityteam.org/) - a multi-track audio editor and recorder
-- [VirtualBox](https://www.virtualbox.org/) -
-- [NVDA](https://www.nvaccess.org/download/) - a screen reader
-- [JAWS](https://www.freedomscientific.com/products/software/jaws/) - screen reader that provides speech and Braille output for computer applications
+- [Audacity](https://www.audacityteam.org/) - multi-track audio editor and recorder
+- [VirtualBox](https://www.virtualbox.org/) - virtualization platform that can run Microsoft Windows as a virtual machine on macOS
+- [NVDA](https://www.nvaccess.org/download/) - screen reader for Windows
+- [JAWS](https://www.freedomscientific.com/products/software/jaws/) - screen reader for Windows that provides speech and Braille output for computer applications
 - [Soundflower](https://github.com/mattingalls/Soundflower) - record system audio output directly without sending it into the air to record
-- [Quicktime](https://support.apple.com/quicktime) - play and record audio and video files on macOs
+- [Quicktime](https://support.apple.com/quicktime) - play and record audio and video files on macOS
 
 ## Hardware and platforms
 
@@ -24,7 +24,7 @@ These steps will show you how to use Soundflower to pass audio to Quicktime to c
 
 Start by following the [installation instructions](https://github.com/mattingalls/Soundflower/releases/tag/2.0b2) from these (now several years old) Soundflower release notes:
 
-1. Download and install the signed Soundflower 2.0b2 installer
+1. Download and install the [signed Soundflower 2.0b2 installer](https://github.com/mattingalls/Soundflower/releases/download/2.0b2/Soundflower-2.0b2.dmg)
 2. Start playing music through the built-in audio
 3. Open Applications > Utilities > Audio MIDI Setup
 4. Click '+' to add a new 'Create Multi Output Device'
@@ -45,7 +45,7 @@ The music you started playing in step 2 should continue to play. Now the audio i
 
 ## Record audio from screen readers with Audacity
 
-For heavier recording and editing capabilities, use Audacity. After confirming a working internal audio recording setup, choose Soundflower (2ch) as the microphone and your new Multi-Output Device as your speaker.
+For heavier recording and editing capabilities, use Audacity. After confirming a working internal audio recording setup, [install and launch Audacity](https://www.audacityteam.org/). Choose Soundflower (2ch) as the microphone and your new Multi-Output Device as your speaker.
 
 With audio playing, hit "Click to Start Monitoring" in Audacity. The visualizer should start to move.
 
@@ -57,14 +57,16 @@ With audio playing, hit "Click to Start Monitoring" in Audacity. The visualizer 
 2. Press <kbd>⌘</kbd> + <kbd>F5</kbd> to start VoiceOver
 3. Use VoiceOver to navigate
 4. When finished, stop the recording in Audacity
+5. Press <kbd>⌘</kbd> + <kbd>F5</kbd> to stop VoiceOver
 
 ### Record NVDA and JAWS on macOS
 
 1. Open VirtualBox and launch Windows
-2. Install NVDA (free) and JAWS (40-minute demo mode) in Windows
-3. Open NVDA or JAWS in Windows and Audacity on macOS
-4. Confirm audio output from NVDA or JAWS is reflected in Audacity
-5. Record the audio as you navigate
+2. [Install NVDA](https://www.nvaccess.org/download/) (free) and [install JAWS](https://www.freedomscientific.com/products/software/jaws/) (40-minute demo mode) in Windows
+3. Open NVDA or JAWS in Windows
+4. Open Audacity on macOS
+5. Confirm audio output from NVDA or JAWS is reflected in Audacity
+6. Record the audio as you navigate
 
 ### Record VoiceOver on iOS
 
@@ -74,12 +76,12 @@ With audio playing, hit "Click to Start Monitoring" in Audacity. The visualizer 
 3. General > Accessibility > VoiceOver > turn On
 4. The screen recording will capture as you navigate
 5. Stop the screen recording when finished
-6. Move MP4 screen recording to macOS
+6. Move MP4 screen recording to macOS for editing
 
-You can re-record the audio using Audacity while playing back portions of the screen recording in QuickTime — you can remove the audio from the screen recording in other ways, too.
+For quick editing you can re-record the audio using Audacity while playing back portions of the screen recording in QuickTime. Converting the MP4 screen recording to MP3 is doable, too.
 
 ## Editing
 
-Using Audacity, open the lengthy recordings and begin to add labels, using <kbd>⌘</kbd> + <kbd>B</kbd>. Marking and labelling the audio file makes the clip export easier to manage.
+Using Audacity, open the full screen reader recording and begin to add labels, using <kbd>⌘</kbd> + <kbd>B</kbd>. Marking and labelling the audio file makes the clip export process easier to manage.
 
-To export the file: Export > Export Selected Audio > Save as MP3
+With a marked audio timeline, highlight the section of the timeline to export. To export the highlighted audio: Export > Export Selected Audio > Save as MP3
