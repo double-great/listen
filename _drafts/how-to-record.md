@@ -1,5 +1,5 @@
 ---
-title: How to Record Audio from Screen Readers
+title: How to record audio from screen readers
 ---
 
 Capturing the audio output from all of these screen readers is a bit of a challenge. There are many ways to do it. Here is one workflow.
