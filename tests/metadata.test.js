@@ -24,12 +24,15 @@ buildList("_posts").forEach((post) => {
       `frontmatter must be formatted correctly: ${post}`
     );
     // has test case file
-    const testPath = `test/${post.replace("_posts/", "").substring(11)}`;
-    t.ok(fs.existsSync(testPath), `has test case file at ${testPath}`);
+    if (metadata.cases !== false) {
+      const testPath = `test/${post.replace("_posts/", "").substring(11)}`;
+      t.ok(fs.existsSync(testPath), `has test case file at ${testPath}`);
+      // has cases
+      t.ok(metadata.cases, "has `cases`");
+    }
+
     // has title
     t.ok(metadata.title, "has `title`");
-    // has cases
-    t.ok(metadata.cases, "has `cases`");
     // validate cases
     if (metadata.cases) {
       t.true(Array.isArray(metadata.cases), "cases is an array");
