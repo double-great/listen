@@ -12,8 +12,6 @@ remote_theme: double-great/great-great-jekyll-theme@main
 
 permalink: /:title/
 
-show_excerpts: true
-
 header_pages:
   - related-resources.md
 
