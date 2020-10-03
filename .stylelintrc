@@ -126,7 +126,7 @@
     "string-quotes": "double",
     "unit-no-unknown": true,
     "unit-case": "lower",
-    "unit-whitelist": ["em", "rem", "%", "s", "ch", "vh", "vw", "deg", "fr"],
+    "unit-allowed-list": ["em", "rem", "%", "s", "ch", "vh", "vw", "deg", "fr"],
     "value-list-comma-newline-after": null,
     "value-list-comma-space-after": "always-single-line",
     "value-list-comma-space-before": "never",
@@ -146,7 +146,6 @@
 
     "plugin/no-unsupported-browser-features": [true, {
       "severity": "warning",
-      "browsers": ["> .5% in US and last 2 version"],
       "ignore": [
         "calc",
         "css-featurequeries",
