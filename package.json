@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test-content": "extra-eyes _posts/ --dict=library.dic",
-    "test": "npm run test-content && tape tests/*.test.js | tap-spec",
+    "test": "npm run test-content && tape tests/*.test.js",
     "pretty-quick": "pretty-quick",
     "stylelint": "npm run browser-list && stylelint  \"_sass/**/*.scss\" --fix",
     "lint": "npm run pretty-quick && npm run stylelint",
@@ -34,7 +34,6 @@
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
     "stylelint-no-unsupported-browser-features": "^4.1.4",
     "stylelint-scss": "^3.19.0",
-    "tap-spec": "^5.0.0",
     "tape": "^5.2.2"
   },
   "husky": {
