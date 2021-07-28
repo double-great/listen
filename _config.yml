@@ -50,3 +50,4 @@ exclude:
   - Gemfile.lock
   - .github
   - library.dic
+  - vendor
