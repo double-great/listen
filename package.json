@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test-content": "extra-eyes _posts/ --dict=library.dic",
-    "test": "bundle exec jekyll build && npm run lint && npm run test-content && tape tests/*.test.js",
+    "test": "bundle exec jekyll build && npm run stylelint && npm run test-content && tape tests/*.test.js",
     "pretty-quick": "pretty-quick",
     "stylelint": "npm run browser-list && stylelint  \"_sass/**/*.scss\" --fix",
     "lint": "npm run pretty-quick && npm run stylelint",
