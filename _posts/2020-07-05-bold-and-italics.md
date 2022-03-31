@@ -44,3 +44,9 @@ This test details the audible effects of bold and italic markup when read by dif
 In all screen readers tested, **no audible distinction** is present between unstyled text, `<b>`, `<strong>`, `<i>`, and `<em>`.
 
 {% include table.html cases=page.cases %}
+
+## Related reading
+
+- [Bold and italics aren’t read by screen readers – tempertemper](https://www.tempertemper.net/blog/bold-and-italics-arent-read-by-screen-readers)
+- [Bruce Lawson’s personal site: Screen reader support for text-level semantics](https://brucelawson.co.uk/2018/screenreader-support-for-text-level-semantics/)
+
