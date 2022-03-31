@@ -119,3 +119,7 @@ VoiceOver on iOS adds a pause when encountering a hyphen, en dash, em dash, colo
 NVDA adds a pause when encountering an en dash, false ellipsis, ellipsis, colon, or semicolon. Hyphen, em dash, dumb quotes, and smart quotes do not cause a pause.
 
 {% include table.html cases=page.cases %}
+
+## Related reading
+
+- [Screen Readers: A Guide to Punctuation and Typographic Symbols](https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/)
