@@ -35,7 +35,7 @@
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
     "stylelint-no-unsupported-browser-features": "^5.0.3",
     "stylelint-scss": "^4.3.0",
-    "tape": "^5.5.3"
+    "tape": "^5.6.0"
   },
   "husky": {
     "hooks": {
