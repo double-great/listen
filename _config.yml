@@ -8,7 +8,7 @@ author:
 
 github: double-great/listen
 
-remote_theme: double-great/theme@v2.0.0
+remote_theme: double-great/theme@main
 
 permalink: /:title/
 
@@ -16,7 +16,7 @@ header_pages:
   - related-resources.md
 
 custom_head: |
-  <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+  <script src="https://unpkg.com/plyr"></script>
 
 plugins:
   - jekyll-feed
