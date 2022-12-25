@@ -99,8 +99,8 @@ audio {
 }
 
 .plyr--audio .plyr__control:hover {
-  color: $color-barely;
-  background: $color-link;
+  color: $color-background;
+  background-color: $color-link;
 }
 
 .plyr--audio .plyr__control.plyr__tab-focus,
