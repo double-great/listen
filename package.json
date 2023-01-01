@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/double-great/listen#readme",
   "devDependencies": {
-    "@double-great/stylelint-a11y": "^2.0.1",
+    "@double-great/stylelint-a11y": "^2.0.2",
     "extra-eyes": "^3.2.0",
     "husky": "^8.0.2",
     "js-yaml": "^4.1.0",
