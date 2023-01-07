@@ -15,9 +15,6 @@ permalink: /:title/
 header_pages:
   - related-resources.md
 
-custom_head: |
-  <script src="https://unpkg.com/plyr"></script>
-
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -36,6 +33,9 @@ defaults:
     values:
       layout: "test"
       permalink: /:basename/test/
+
+sass:
+  style: compressed
 
 collections:
   cases:
