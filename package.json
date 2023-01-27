@@ -9,6 +9,7 @@
     "pretty-quick": "pretty-quick",
     "stylelint": "npm run browser-list && stylelint  \"_sass/**/*.scss\" --fix",
     "lint": "npm run pretty-quick && npm run stylelint",
+    "local": "npm run stylelint && bundle exec jekyll serve --watch",
     "browser-list": "echo Browser support list: && npx browserslist",
     "browser-update": "npx browserslist@latest --update-db"
   },
