@@ -1,0 +1,93 @@
+current directory: /home/runner/work/listen/listen/vendor/bundle/ruby/3.0.0/gems/commonmarker-0.23.7/ext/commonmarker
+/opt/hostedtoolcache/Ruby/3.0.5/x64/bin/ruby -I /opt/hostedtoolcache/Ruby/3.0.5/x64/lib/ruby/3.0.0 -r ./siteconf20230302-1672-xsz4lc.rb extconf.rb
+creating Makefile
+
+current directory: /home/runner/work/listen/listen/vendor/bundle/ruby/3.0.0/gems/commonmarker-0.23.7/ext/commonmarker
+make DESTDIR\= clean
+
+current directory: /home/runner/work/listen/listen/vendor/bundle/ruby/3.0.0/gems/commonmarker-0.23.7/ext/commonmarker
+make DESTDIR\=
+compiling arena.c
+compiling autolink.c
+autolink.c: In function ‘postprocess_text’:
+autolink.c:359:31: warning: passing argument 1 of ‘validate_protocol’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  359 |         if (validate_protocol("mailto:", data + start + offset + max_rewind, rewind, max_rewind)) {
+      |                               ^~~~~~~~~
+autolink.c:294:36: note: expected ‘char *’ but argument is of type ‘const char *’
+  294 | static bool validate_protocol(char protocol[], uint8_t *data, size_t rewind, size_t max_rewind) {
+      |                               ~~~~~^~~~~~~~~~
+autolink.c:364:31: warning: passing argument 1 of ‘validate_protocol’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  364 |         if (validate_protocol("xmpp:", data + start + offset + max_rewind, rewind, max_rewind)) {
+      |                               ^~~~~~~
+autolink.c:294:36: note: expected ‘char *’ but argument is of type ‘const char *’
+  294 | static bool validate_protocol(char protocol[], uint8_t *data, size_t rewind, size_t max_rewind) {
+      |                               ~~~~~^~~~~~~~~~
+autolink.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling blocks.c
+compiling buffer.c
+compiling cmark.c
+compiling cmark_ctype.c
+compiling commonmark.c
+commonmark.c: In function ‘S_render_node’:
+commonmark.c:420:18: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  420 |       emph_delim = "_";
+      |                  ^
+commonmark.c:422:18: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  422 |       emph_delim = "*";
+      |                  ^
+commonmark.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling commonmarker.c
+In file included from houdini.h:9,
+                 from commonmarker.c:3:
+config.h:8: warning: "HAVE_STDBOOL_H" redefined
+    8 | #define HAVE_STDBOOL_H
+      | 
+In file included from /opt/hostedtoolcache/Ruby/3.0.5/x64/include/ruby-3.0.0/ruby/internal/config.h:23,
+                 from /opt/hostedtoolcache/Ruby/3.0.5/x64/include/ruby-3.0.0/ruby/ruby.h:15,
+                 from /opt/hostedtoolcache/Ruby/3.0.5/x64/include/ruby-3.0.0/ruby.h:38,
+                 from commonmarker.h:9,
+                 from commonmarker.c:1:
+/opt/hostedtoolcache/Ruby/3.0.5/x64/include/ruby-3.0.0/x86_64-linux/ruby/config.h:38: note: this is the location of the previous definition
+   38 | #define HAVE_STDBOOL_H 1
+      | 
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling core-extensions.c
+compiling ext_scanners.c
+compiling footnotes.c
+compiling houdini_href_e.c
+compiling houdini_html_e.c
+compiling houdini_html_u.c
+compiling html.c
+compiling inlines.c
+compiling iterator.c
+compiling latex.c
+compiling linked_list.c
+compiling man.c
+compiling map.c
+compiling node.c
+compiling plaintext.c
+compiling plugin.c
+compiling references.c
+compiling registry.c
+compiling render.c
+compiling scanners.c
+compiling strikethrough.c
+compiling syntax_extension.c
+compiling table.c
+compiling tagfilter.c
+compiling tasklist.c
+compiling utf8.c
+compiling xml.c
+linking shared-object commonmarker/commonmarker.so
+
+current directory: /home/runner/work/listen/listen/vendor/bundle/ruby/3.0.0/gems/commonmarker-0.23.7/ext/commonmarker
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 commonmarker.so ./.gem.20230302-1672-muv0xt/commonmarker
