@@ -1,0 +1,20 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+  {%- include head.html -%}
+
+  <body class="page-{{page.layout | slugify}} no-js">
+    {%- include header.html -%}
+
+    <main class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+    <script>document.body.classList.remove("no-js");{%- include nav.min.js -%}</script>
+  </body>
+</html>
